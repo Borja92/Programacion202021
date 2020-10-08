@@ -7,7 +7,7 @@ public class SueldoOperario {
 
         Scanner src = new Scanner(System.in);
         DecimalFormat formateador = new DecimalFormat("#######.##");
-        System.out.println(formateador.format(23.323232323232323)); // Esto muestra el decimal con el siguiente formato 23.3
+        System.out.println(formateador.format(23.323232323232323)); // Esto muestra el decimal con el siguiente formato 23.32
         System.out.println("Indica el nombre del empleado: ");
 String nombreEmpleado= src.next();
         System.out.println("Introduce las horas trabajadas: ");
