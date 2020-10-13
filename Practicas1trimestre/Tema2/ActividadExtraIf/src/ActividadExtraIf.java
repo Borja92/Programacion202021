@@ -81,7 +81,7 @@ else if (opcion==3){
    // System.out.println("cateto2 "+cateto2);
     double area=cateto1*cateto2/2;
 
-    System.out.printf("%nEl área del triagulo calculado a partir de su dos catetos es: %.2f%s.", area,unidadDemedida);
+    System.out.printf("%nEl área del triagulo calculado a partir de sus dos catetos es: %.2f%s.", area,unidadDemedida);
 
 
     System.out.println("\n=====Fin Programa=====");
@@ -99,7 +99,7 @@ else if(opcion==4) {
 
 double area=cateto1*cateto2/2;
 
-    System.out.printf("%nEl área del triagulo calculado a partir de su dos catetos es: %.2f%s.", area,unidadDemedida);
+    System.out.printf("%nEl área del triagulo calculado a partir de sus dos catetos es: %.2f%s.", area,unidadDemedida);
     System.out.println("\n=====Fin Programa=====");
 }
 
