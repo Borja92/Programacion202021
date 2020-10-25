@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd822cb0-f801-483b-93f8-7531f06c7ed9" name="Default Changelist" comment="" />
+    <list default="true" id="444f0151-51d1-4c5c-9e83-dd8e71301052" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,16 +10,15 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DefaultGradleProjectSettings">
-    <option name="testRunner" value="GRADLE" />
-    <option name="delegatedBuild" value="true" />
+    <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prac1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+            <state relative-caret-position="456">
+              <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -27,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prac2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="361">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -36,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prac3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="45" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="494">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -45,8 +44,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prac4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+            <state relative-caret-position="592">
+              <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#432#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,8 +56,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Prac5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="380">
+              <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#213#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -83,11 +88,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="y" value="-10" />
-    <option name="width" value="979" />
-    <option name="height" value="1049" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="y" value="-8" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,12 +104,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="PracticasFor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticasFor" type="462c0819:PsiDirectoryNode" />
+              <item name="EstructuraControlPracticas1al5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EstructuraControlPracticas1al5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="PracticasFor" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PracticasFor" type="462c0819:PsiDirectoryNode" />
+              <item name="EstructuraControlPracticas1al5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="EstructuraControlPracticas1al5" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -117,7 +122,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PracticasFor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -134,35 +139,35 @@
   <component name="RunManager" selected="Application.Prac5">
     <configuration name="Prac1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prac1" />
-      <module name="PracticasFor" />
+      <module name="EstructuraControlPracticas1al5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Prac2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prac2" />
-      <module name="PracticasFor" />
+      <module name="EstructuraControlPracticas1al5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Prac3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prac3" />
-      <module name="PracticasFor" />
+      <module name="EstructuraControlPracticas1al5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Prac4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prac4" />
-      <module name="PracticasFor" />
+      <module name="EstructuraControlPracticas1al5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Prac5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prac5" />
-      <module name="PracticasFor" />
+      <module name="EstructuraControlPracticas1al5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -182,18 +187,19 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="cd822cb0-f801-483b-93f8-7531f06c7ed9" name="Default Changelist" comment="" />
-      <created>1602580416342</created>
+      <changelist id="444f0151-51d1-4c5c-9e83-dd8e71301052" name="Default Changelist" comment="" />
+      <created>1602699651023</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602580416342</updated>
+      <updated>1602699651023</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="952" y="-8" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.12526652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -202,7 +208,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4305949" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33261105" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -224,36 +230,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Prac1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="1" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="1" />
+        <state relative-caret-position="456">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="361">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="494">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="37" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        <state relative-caret-position="592">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#432#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="380">
+          <caret line="20" column="46" selection-start-line="20" selection-start-column="46" selection-end-line="20" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#213#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
