@@ -10,26 +10,26 @@ public class Prac7 {
 
     public static void main(String[] args) {
 
-        Scanner src = new Scanner(System.in);
+      //  Scanner src = new Scanner(System.in);
 
-        String nombreCompleto = "", iniciales;
-
+     /*   String nombreCompleto = "", iniciales;
 
 
         do {
             try {
+
                 System.out.println("\nIntroduzaca nombre y apellidos: ");
                 nombreCompleto = src.nextLine();
 
                 if (nombreCompleto != null && !nombreCompleto.isEmpty()) {
 
                     StringTokenizer stringTokenizer = new StringTokenizer(nombreCompleto);
-while (stringTokenizer.hasMoreTokens()){
+                    while (stringTokenizer.hasMoreTokens()) {
 
-    iniciales=stringTokenizer.nextToken();
+                        iniciales = stringTokenizer.nextToken();
 
-    System.out.print(iniciales.substring(0,1)+".");
-}
+                        System.out.print(iniciales.substring(0, 1) + ".");
+                    }
 
                 } else {
 
@@ -40,7 +40,29 @@ while (stringTokenizer.hasMoreTokens()){
                 System.out.println("\nError: " + e.getMessage());
 
             }
-        }while (nombreCompleto.isEmpty()) ;
+        } while (nombreCompleto.isEmpty());
+*/
+
+
+        Scanner teclado = new Scanner(System.in);
+        String nombreApellidos;
+        int contador,mayuscula;
+
+        do {
+            System.out.println("Introduce tu nombre y tus apellidos y te dire tus iniciales");
+            nombreApellidos= teclado.nextLine();
+        }
+        while(nombreApellidos.length()==0);
+        System.out.print(nombreApellidos.charAt(0)+".");
+        for(contador=0;contador< nombreApellidos.length() ;contador++)
+        {
+            if (nombreApellidos.charAt(contador)==' '){
+                mayuscula=contador+1;
+                System.out.print(nombreApellidos.charAt(mayuscula)+".");
+            }
+
+        }
+
 
     }
 
