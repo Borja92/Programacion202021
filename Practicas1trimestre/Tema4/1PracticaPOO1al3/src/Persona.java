@@ -27,8 +27,11 @@ public class Persona {
         this.setNombre(nombre);
         this.setDni(dni);
         this.setEdad(edad);
-
     }
+
+
+
+
 
 //Constructor vacío
     public Persona() {

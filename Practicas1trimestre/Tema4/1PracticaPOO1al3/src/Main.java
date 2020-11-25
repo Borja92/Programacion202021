@@ -19,7 +19,7 @@ public class Main {
         persona1.setDni("12345678A");
         persona1.setEdad(28);
 
-        System.out.println("¿Es mayor de edad?" + persona1.esMayorDeEdad() + "\n");
+        System.out.println("¿"+persona1.getNombre()+" es mayor de edad? " + persona1.esMayorDeEdad() + "\n");
 
         persona1.mostrar();
 
@@ -28,13 +28,15 @@ public class Main {
         persona2.setEdad(23);
 
         persona2.mostrar();
-        System.out.println(persona2.esMayorDeEdad());
+        System.out.println("¿"+persona2.getNombre()+" es mayor de edad? " + persona2.esMayorDeEdad() + "\n");
 
         persona3.setNombre("Persona3");
         persona3.setEdad(17);
         persona3.setDni("26842211O");
 
         persona3.mostrar();
+        System.out.println("¿"+persona3.getNombre()+" es mayor de edad? " + persona3.esMayorDeEdad() + "\n");
+
 //No continua el programa si el DNI no está en el formato adecuado ?¿
         /*persona3.setDni("268422O");
 
