@@ -3,7 +3,6 @@
         dos a dos, guardando el resultado en otro array e imprimiendo
         los valores de este último array.*/
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Prac4 {
@@ -17,7 +16,7 @@ public class Prac4 {
         int[] array2;
         int[] arrayDeResultados;
 
-        //Pedimos por teclado la logitud de los arrays
+        //Pedímos por teclado la logitud de los arrays
         System.out.println("Introduce longitud para los Arrays: ");
         int tamannoArray = src.nextInt();
 

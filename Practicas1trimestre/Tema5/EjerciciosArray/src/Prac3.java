@@ -8,7 +8,9 @@ import java.util.Arrays;
 
 public class Prac3 {
 
-    private static void sonIguales(int[] a, int[] b){
+
+//Sencillo método que compara los valores de dos arrays pasados por parámetros
+     private void sonIguales(int[] a, int[] b){
 
         boolean sonIguales;
 
@@ -20,6 +22,8 @@ public class Prac3 {
 
     public static void main(String[] args) {
 
+        Prac3 prac3 = new Prac3();
+
         int[] array1 = {1, 2, 3};
         int[] array2 = {1, 2, 3};
         int[] array3 = {1, 2, 3, 4};
@@ -27,9 +31,9 @@ public class Prac3 {
         int[] array5 = {1, 2, 3};
         int[] array6 = {1, 2, 2};
 
-        sonIguales(array1,array2);
-        sonIguales(array3,array4);
-        sonIguales(array5,array6);
+        prac3.sonIguales(array1,array2);
+        prac3.sonIguales(array3,array4);
+        prac3.sonIguales(array5,array6);
 
 
 
