@@ -28,12 +28,12 @@ public class Prac4Extra {
     //Método de ordenación burbuja descendente
     int[] burbujaDescendente(int[] array) {
         int aux;
-        for (int i =0; i < array.length; i++) {
-            for (int j = 0; j < array.length -i - 1; j++) {
+        for (int i =array.length; i > 0; i--) {
+            for (int j =array.length-1; j >0 ; j--) {
 
-                if (array[j + 1] > array[j]) {
-                    aux = array[j + 1];
-                    array[j + 1] = array[j];
+                if (array[j] > array[j-1]) {
+                    aux = array[j - 1];
+                    array[j- 1] = array[j];
                     array[j] = aux;
                 }
             }
@@ -43,7 +43,6 @@ public class Prac4Extra {
 
     int[][] burbujaAscendenteParaMatrizBideimensional(int[][] matriz) {
 
-        int x, y;
         burbujaAscendente(matriz[0]);
         burbujaAscendente(matriz[1]);
 
@@ -52,7 +51,7 @@ public class Prac4Extra {
     }
 
     int[][] burbujaDescendenteParaMatrizBideimensional(int[][] matriz) {
-        int x, y;
+
         burbujaDescendente(matriz[0]);
         burbujaDescendente(matriz[1]);
 

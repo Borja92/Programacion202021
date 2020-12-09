@@ -26,27 +26,20 @@ public class Prac5Extra {
 
 
         for (int i = 0; i < array.length; i++) {
-            aux = i + 1;
 
             if (numUsuario == array[i]) {
-
                 flag = true;
-                        /*System.out.print("\nEnhorabuena el número coincide con un valor ya existente en el array!!!\n" +
-                                "El número es " + numUsuario + " y se encuentra en la posición: " + (aux));
-                    } else {
-                    System.out.print("\nEl número " + numUsuario + " no coincide con ningún valor del array.");
-                }*/
+                aux = i + 1;
             }
         }
-        
-        if (flag=true){
+
+        if (flag == true) {
             System.out.print("\nEnhorabuena el número coincide con un valor ya existente en el array!!!\n" +
-                "El número es " + numUsuario + " y se encuentra en la posición: " + (aux));
+                    "El número es " + numUsuario + " y se encuentra en la posición: " + (aux));
         } else {
             System.out.print("\nEl número " + numUsuario + " no coincide con ningún valor del array.");
         }
-        
-        
+
     }
             
 
