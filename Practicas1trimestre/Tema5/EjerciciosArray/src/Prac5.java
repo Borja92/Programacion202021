@@ -29,12 +29,12 @@ public class Prac5 {
 
       //Definimos el array y variables
         int[] miArray = new int[10];
-        int indice;
+
 //Con un for recorremos el array e introducimos los valores pedidos por consola
-        for (  indice=0; indice<miArray.length; indice++) {
+        for (  int i=0; i<miArray.length; i++) {
 
             System.out.println("Introduce un valor para almacenar en el array: ");
-           miArray[indice]= src.nextInt();
+           miArray[i]= src.nextInt();
         }
 //Recorremos de nuevo el array, y usando el metodo valorRepetido, descartamos los valores repetidos y mostramos los valores obviando estos
         for (int i = 0; i <N ; i++) {
