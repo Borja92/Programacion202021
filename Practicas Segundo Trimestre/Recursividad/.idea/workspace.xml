@@ -26,7 +26,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Prac2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
+            <state relative-caret-position="76">
               <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="e#0#840#0" expanded="true" />
@@ -38,11 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Prac4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
+            <state relative-caret-position="95">
               <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#0#695#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -69,10 +66,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1927" />
-    <option name="y" value="-7" />
-    <option name="width" value="1939" />
-    <option name="height" value="1049" />
+    <option name="x" value="-2479" />
+    <option name="y" value="154" />
+    <option name="width" value="1936" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -80,8 +77,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,10 +149,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-1925" y="-5" width="1551" height="839" extended-state="7" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25503355" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25853986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -193,7 +189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
+        <state relative-caret-position="76">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
           <folding>
             <element signature="e#0#840#0" expanded="true" />
@@ -203,11 +199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Prac4.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="95">
           <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#0#695#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
