@@ -1,11 +1,11 @@
 import java.util.Comparator;
 
-public  class Piloto implements Comparator<Piloto> {
+public class Piloto implements Comparator<Piloto> {
 
     private String nombre;
     private String escuderia;
     private Integer posicionDeSalida;
-    private boolean descalificado=false;
+    private boolean descalificado = false;
 
     public Piloto(Integer posicionDeSalida, String nombre, String escuderia, boolean descalificado) {
         this.nombre = nombre;
@@ -56,14 +56,27 @@ public  class Piloto implements Comparator<Piloto> {
     }
 
 
+    public int comparaPosicionSalida(Piloto o1) {
 
-    @Override
-    public int compare(Piloto o1, Piloto o2) {
-        return 0;
+        int comparaPosicionSalida = ((Piloto) o1).getPosicionDeSalida();
+//Orden ascendente
+        return this.posicionDeSalida - comparaPosicionSalida;
+//Orden descendente
+        //  return comparaPosicionSalida-this.posicionDeSalida;
     }
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Piloto{" +
+                "Nombre='" + nombre + '\'' +
+                ", Escuderia='" + escuderia + '\'' +
+                ", PosicionDeSalida=" + posicionDeSalida +
+                ", Descalificado=" + descalificado +
+                "}\n";
+    }
+
+    @Override
+    public int compare(Piloto o1, Piloto o2) {
+        return 0;
     }
 }
