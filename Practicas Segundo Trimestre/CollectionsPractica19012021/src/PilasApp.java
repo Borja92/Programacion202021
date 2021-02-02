@@ -16,6 +16,9 @@ public class PilasApp {
 
         //Llamada a la clase PilaArray
         PilaArray pilaArrayEstatico = new PilaArray();
+
+        Pila pila= new PilaArray();
+
         //Comprobamos el estado de la pila
         System.out.println("Una pila dónde no se ha insertado nada, está vavía (pilaVacia==true).");
         System.out.println("¿Está vacía la pila? " + pilaArrayEstatico.pilaVacia());
@@ -54,10 +57,12 @@ public class PilasApp {
         System.out.println();
         //Llamada a la clase PilaCollections
         PilaCollections pilaCollections = new PilaCollections();
+        Pila  pila2= new PilaCollections();
 
         //Comprobamos estado de la pila
         System.out.println("Una pila dónde no se ha insertado nada, está vavía (pilaVacia==true).");
-        System.out.println("¿Está vacía la pila? " + pilaCollections.pilaCollectionsVacia());
+        //System.out.println("¿Está vacía la pila? " + pilaCollections.pilaCollectionsVacia());
+        System.out.println("¿Está vacía la pila? " + pila2.pilaVacia());
         System.out.println();
         //Añadimos elementos 1, 2 y 3 a la pila
         System.out.println("Al insertar (push) los valores 1, 2 y 3");
@@ -86,7 +91,8 @@ public class PilasApp {
         System.out.println("Valor de la cima actual que además es sacado de esta: " + pilaCollections.pop());
         System.out.println();
 //Comprobamos que la pila ha quedado vacía
-        System.out.println("¿La pila está vacía?" + pilaCollections.pilaCollectionsVacia());
+        //System.out.println("¿La pila está vacía?" + pilaCollections.pilaCollectionsVacia());
+        System.out.println("¿La pila está vacía?" + pila2.pilaVacia());
 //        System.out.println(pilaCollections);
 
     }

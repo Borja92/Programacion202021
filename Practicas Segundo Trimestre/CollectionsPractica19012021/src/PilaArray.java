@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class PilaArray {
+public class PilaArray implements Pila{
 
     private final static int TAMANNO_PILA = 100;
     private Integer[] array;
