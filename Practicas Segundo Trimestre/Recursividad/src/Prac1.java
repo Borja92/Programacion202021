@@ -2,7 +2,7 @@
         El  factorial de un número entero! ≥ 0, denotado como!!, se define
         como ! !
         !!! = 1 ∗ 2 ∗ ... ∗ ! cuando! > 0,y 0! = 1.
-        Por ejemplo 6! = 1 ∗ 2 ∗ 3 ∗ 4 ∗ 5 ∗ 6 = 720
+        Por ejemplo 6 = 1 ∗ 2 ∗ 3 ∗ 4 ∗ 5 ∗ 6 = 720
         Diseñad#una#método recursiva que lo calcule e implementadlo en Java
         (junto con un programa que lo utilice)*/
 

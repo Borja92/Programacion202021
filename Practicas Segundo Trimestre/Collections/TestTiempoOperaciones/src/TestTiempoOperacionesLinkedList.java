@@ -1,8 +1,8 @@
 import java.util.*;
 
 public class TestTiempoOperacionesLinkedList{
-        public final static int INICIO_LISTA = 0;
-        public final static int MITAD_LISTA = 1;
+        private final  int INICIO_LISTA = 0;
+        private final  int MITAD_LISTA = 1;
 
         private LinkedList<Integer> linkedList = new LinkedList<>();
 
