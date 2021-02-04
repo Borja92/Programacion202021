@@ -37,14 +37,14 @@ return cadenaFiltrada;
 
         //Llenamos la pila y la cola con los valores de la frase
         for (int i = 0; i < longitud; i++) {
-            cola.add(cadenaNormalizada.charAt(i));
-            pila.add(cadenaNormalizada.charAt(i));
+            cola.addLast(cadenaNormalizada.charAt(i));//Insertamos  en la cola desde atrás
+            pila.addFirst(cadenaNormalizada.charAt(i)); //Insertamos en la pila por delante
         }
         //ahora comparamos la pila y la cola para comprobar si hay palíndromo o no
 //Método pop se utiliza para extraer el primer elemento de la pila, además lo devuelve
 //Método pollLast se utilizar para extraer el último elemento de la cola, además también lo devuelve
         while (!cola.isEmpty()) {
-            if (pila.pop() != cola.pollLast()) {
+            if (pila.pop() != cola.poll()) {
                 esPalindroma = false;
             }
         }
@@ -54,7 +54,6 @@ return cadenaFiltrada;
             JOptionPane.showMessageDialog(this, "La cadena: " +cadena+"  NO es palíndroma. \nTiene " + (st.countTokens()) + " palábras y un total de " +espaciosBlancos+ " espacios en blanco.");
         }
     }
-
 
     public static void main(String[] args) {
         AppPalindroma appPalindroma = new AppPalindroma();
