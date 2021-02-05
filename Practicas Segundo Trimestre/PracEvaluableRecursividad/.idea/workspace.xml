@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="20183b85-bd75-4dfd-85e4-954411a46c90" name="Default Changelist" comment="" />
+    <list default="true" id="a6c32147-2b56-40c5-b32e-401d89cb36ab" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,13 +16,35 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/AppPalindroma.java">
+        <entry file="file://$PROJECT_DIR$/src/Nodo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-496">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="-1615">
+              <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#832#833#0" expanded="true" />
+                <element signature="e#860#861#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#933#934#0" expanded="true" />
+                <element signature="e#971#972#0" expanded="true" />
+                <element signature="e#1007#1008#0" expanded="true" />
+                <element signature="e#1063#1064#0" expanded="true" />
+                <element signature="e#1113#1114#0" expanded="true" />
+                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="e#1183#1184#0" expanded="true" />
+                <element signature="e#1235#1236#0" expanded="true" />
+                <element signature="e#1281#1282#0" expanded="true" />
+                <element signature="e#3878#3879#0" expanded="true" />
+                <element signature="e#3910#3911#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ArbolBinarioOrdenado.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="741">
+              <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
             </state>
           </provider>
         </entry>
@@ -37,20 +59,20 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppPalindroma.java" />
+        <option value="$PROJECT_DIR$/src/ArbolBinarioOrdenado.java" />
+        <option value="$PROJECT_DIR$/src/Nodo.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1878" />
-    <option name="y" value="-9" />
-    <option name="width" value="1220" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -62,12 +84,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="AppPalindromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppPalindromo" type="462c0819:PsiDirectoryNode" />
+              <item name="PracEvaluableRecursividad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracEvaluableRecursividad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AppPalindromo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AppPalindromo" type="462c0819:PsiDirectoryNode" />
+              <item name="PracEvaluableRecursividad" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PracEvaluableRecursividad" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -94,16 +116,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="AppPalindroma" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppPalindroma" />
-      <module name="AppPalindromo" />
+    <configuration name="Nodo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Nodo" />
+      <module name="PracEvaluableRecursividad" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppPalindroma" />
+        <item itemvalue="Application.Nodo" />
       </list>
     </recent_temporary>
   </component>
@@ -112,31 +134,32 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="20183b85-bd75-4dfd-85e4-954411a46c90" name="Default Changelist" comment="" />
-      <created>1612388513976</created>
+      <changelist id="a6c32147-2b56-40c5-b32e-401d89cb36ab" name="Default Changelist" comment="" />
+      <created>1612457452868</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1612388513976</updated>
+      <updated>1612457452868</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="952" y="0" width="976" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15369128" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18231441" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31303117" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18526544" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -152,33 +175,32 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk-15/lib/src.zip!/java.desktop/java/awt/Container.java">
+    <entry file="file://$PROJECT_DIR$/src/ArbolBinarioOrdenado.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1113" column="12" selection-start-line="1113" selection-start-column="12" selection-end-line="1113" selection-end-column="12" />
+        <state relative-caret-position="741">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-15/lib/src.zip!/java.base/java/lang/StringLatin1.java">
+    <entry file="file://$PROJECT_DIR$/src/Nodo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-15/lib/src.zip!/java.base/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="711" column="32" selection-start-line="711" selection-start-column="32" selection-end-line="711" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppPalindroma.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-496">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        <state relative-caret-position="-1615">
+          <caret line="87" column="9" lean-forward="true" selection-start-line="87" selection-start-column="9" selection-end-line="87" selection-end-column="9" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#860#861#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#933#934#0" expanded="true" />
+            <element signature="e#971#972#0" expanded="true" />
+            <element signature="e#1007#1008#0" expanded="true" />
+            <element signature="e#1063#1064#0" expanded="true" />
+            <element signature="e#1113#1114#0" expanded="true" />
+            <element signature="e#1149#1150#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1281#1282#0" expanded="true" />
+            <element signature="e#3878#3879#0" expanded="true" />
+            <element signature="e#3910#3911#0" expanded="true" />
           </folding>
         </state>
       </provider>

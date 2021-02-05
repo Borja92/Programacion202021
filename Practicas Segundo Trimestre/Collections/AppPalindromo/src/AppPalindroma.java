@@ -14,9 +14,10 @@ public class AppPalindroma extends JOptionPane {
 
     String normalizarCadena(){
 
-        Scanner src = new Scanner(System.in);
-        System.out.println("Introduce una frase para comprobar si es palíndroma o no: ");
-         cadena= src.nextLine();
+      //  Scanner src = new Scanner(System.in);
+        //System.out.println("Introduce una frase para comprobar si es palíndroma o no: ");
+       //  cadena= src.nextLine();
+         cadena= JOptionPane.showInputDialog("Indrotuduzca una frase para comprobar si es palíndroma o n: ");
         String cadenaFiltrada = Normalizer.normalize(cadena, Normalizer.Form.NFD); // Normaliza una secuencia de valores de caracteres. La secuencia se normalizará de acuerdo con la normalización especificada (Canonical Descomposition)
         cadenaFiltrada = cadenaFiltrada.toLowerCase().replaceAll("[\\s+\\p{InCombiningDiacriticalMarks},]", ""); // Sin espacios ni comas y en minusculas
 
