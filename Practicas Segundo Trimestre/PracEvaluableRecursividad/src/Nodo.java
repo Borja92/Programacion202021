@@ -134,13 +134,13 @@ if (valor == this.valor) valorEnArbol=true;
         if (hijoIzquierdo != null) {
             hijoIzquierdo.recorridoEnOrdenIzqDerech();
         }
-        System.out.print(pintarValor());
+pintarValor();
     }
 
     //Nodo Árbol -> Nodo Izq -> Nodo Derecho
 
     public  void recorridoEnOrdenArbolIzqDerech(){
-        System.out.print(pintarValor());
+pintarValor();
         if (hijoIzquierdo!=null){
             hijoIzquierdo.recorridoEnOrdenArbolIzqDerech();
         }
@@ -149,8 +149,19 @@ if (valor == this.valor) valorEnArbol=true;
         }
     }
 
-    public  String pintarValor(){
-        return valor+" ";
+    public  void pintarValor(){
+        int casoBase=0;
+        int menorCasoBase=0;
+        int mayorCasoBase=0;
+
+        if(valor>casoBase){
+            mayorCasoBase=valor;
+            System.out.println(mayorCasoBase + "\\");
+        }
+        if (valor<casoBase){
+            menorCasoBase=valor;
+            System.out.println(menorCasoBase + "/");
+        } else         System.out.println("/" + valor + "\\");
     }
     @Override
     public String toString() {
