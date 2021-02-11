@@ -81,13 +81,14 @@ public class Nodo {
         // * Un subárbol es un nodo que apunta a otros.
         // ** El caso base es un subárbol nulo.
         if (valor < this.valor) {
-            if (hijoIzquierdo != null) {
+            if (hijoIzquierdo != null) { //Insertar en el subárbol izquierdo
+
                 hijoIzquierdo.addValor(valor);
             } else {
                 hijoIzquierdo = new Nodo(valor);
             }
         } else {
-            if (hijoDerecho != null) {
+            if (hijoDerecho != null) { //Insertar en el subárbol derecho
                 hijoDerecho.addValor(valor);
             } else {
                 hijoDerecho = new Nodo(valor);
@@ -144,7 +145,7 @@ public class Nodo {
 
 
     public void pintarValor() {
-        int casoBase = 0;
+        int casoBase =this.valor;
         int menorCasoBase;
         int mayorCasoBase;
 
