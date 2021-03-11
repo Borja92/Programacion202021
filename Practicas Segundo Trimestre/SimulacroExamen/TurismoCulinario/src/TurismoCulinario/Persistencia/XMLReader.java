@@ -1,15 +1,14 @@
-package TurismoCulinario.Modelo.Persistencia;
+package TurismoCulinario.Persistencia;
 
-import TurismoCulinario.Modelo.Modelo.Ciudad;
-import TurismoCulinario.Modelo.Modelo.Coordenadas;
-import TurismoCulinario.Modelo.Modelo.Establecimiento;
-import TurismoCulinario.Modelo.Modelo.Plato;
+import TurismoCulinario.Modelo.Ciudad;
+import TurismoCulinario.Modelo.Coordenadas;
+import TurismoCulinario.Modelo.Establecimiento;
+import TurismoCulinario.Modelo.Plato;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -19,12 +18,9 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class XMLReader {
-
     private Document doc;
     private Map<String,Ciudad> ciudades;
     private String file;
@@ -32,7 +28,6 @@ public class XMLReader {
     public XMLReader(String file){
 
         this.file = file;
-
 
         String dir = System.getProperty("user.dir");
 
@@ -44,30 +39,31 @@ public class XMLReader {
 
             doc.getDocumentElement().normalize();
 
-        } catch (IOException | ParserConfigurationException | SAXException | IllegalArgumentException e) {
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
             e.printStackTrace();
         }
     }
-
 
     public void setCiudades(Map<String,Ciudad> ciudades){
         this.ciudades = ciudades;
     }
 
     public Map<String,Ciudad> read() throws XPathExpressionException {
-
         XPath xPath = XPathFactory.newInstance().newXPath();
         String xpathExpr = "/establecimientos/establecimiento";
         NodeList nodeList = (NodeList) xPath.compile(xpathExpr).evaluate(doc, XPathConstants.NODESET);
         for (int i = 0; i < nodeList.getLength(); i++) {
-
             if (nodeList.item(i).getNodeType() == Node.ELEMENT_NODE) {
-
                 Element elementoEstablecimiento = (Element) nodeList.item(i);
                 Establecimiento establecimiento = addEstablecimientoACiudad(elementoEstablecimiento);
                 NodeList platosEstablecimiento = elementoEstablecimiento.getElementsByTagName("plato");
                 List<Plato> platos = getPlatosFromNodeList(platosEstablecimiento);
-
                 for (Plato plato: platos)
                     establecimiento.addPlato(plato);
             }

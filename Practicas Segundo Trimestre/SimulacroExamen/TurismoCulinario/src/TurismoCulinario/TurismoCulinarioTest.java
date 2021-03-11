@@ -1,8 +1,9 @@
-package TurismoCulinario.Modelo;
+package TurismoCulinario;
 
-import TurismoCulinario.Modelo.Modelo.Coordenadas;
-import TurismoCulinario.Modelo.Modelo.Establecimiento;
-import TurismoCulinario.Modelo.Modelo.Plato;
+import TurismoCulinario.Modelo.Coordenadas;
+import TurismoCulinario.Modelo.Establecimiento;
+import TurismoCulinario.Modelo.Plato;
+
 import javax.xml.xpath.XPathExpressionException;
 
 

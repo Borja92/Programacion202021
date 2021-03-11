@@ -1,7 +1,7 @@
-package TurismoCulinario.Modelo.Persistencia;
+package TurismoCulinario.Persistencia;
 
-import TurismoCulinario.Modelo.Modelo.Ciudad;
-import TurismoCulinario.Modelo.Modelo.Plato;
+import TurismoCulinario.Modelo.Ciudad;
+import TurismoCulinario.Modelo.Plato;
 
 import javax.swing.text.Document;
 import java.io.File;
@@ -36,17 +36,11 @@ public class CSVReader {
                 if (!ciudades.containsKey(nombreCiudad))
             ciudades.put(nombreCiudad, new Ciudad(nombreCiudad));
                     ciudades.get(nombreCiudad).addPlato(plato);
-
             }
 
             } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
-
-
-
-
-
 return ciudades;
     }
 

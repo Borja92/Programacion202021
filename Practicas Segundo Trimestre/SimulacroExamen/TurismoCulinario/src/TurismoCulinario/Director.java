@@ -1,11 +1,11 @@
-package TurismoCulinario.Modelo;
+package TurismoCulinario;
 
-import TurismoCulinario.Modelo.Modelo.CalculadoraDistancia;
-import TurismoCulinario.Modelo.Modelo.Ciudad;
-import TurismoCulinario.Modelo.Modelo.Establecimiento;
-import TurismoCulinario.Modelo.Modelo.Plato;
-import TurismoCulinario.Modelo.Persistencia.CSVReader;
-import TurismoCulinario.Modelo.Persistencia.XMLReader;
+import TurismoCulinario.Modelo.CalculadoraDistancia;
+import TurismoCulinario.Modelo.Ciudad;
+import TurismoCulinario.Modelo.Establecimiento;
+import TurismoCulinario.Modelo.Plato;
+import TurismoCulinario.Persistencia.CSVReader;
+import TurismoCulinario.Persistencia.XMLReader;
 
 import javax.xml.xpath.XPathExpressionException;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package TurismoCulinario.Modelo.Modelo;
+package TurismoCulinario.Modelo;
 
 import java.util.Objects;
 
