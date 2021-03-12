@@ -44,7 +44,7 @@ public List<Establecimiento> getEstablecimientosPorCiudadYPlato(String nombreCiu
         Ciudad ciudad = ciudades.get(nombreCiudad);
         if (ciudad.tienePlato(nombrePlato)) {
             List<Establecimiento> establecimientos = getEstablecimientosPorCiudad(nombreCiudad);
-            List<Establecimiento> establecimientosConPlato = new ArrayList<>();
+            List<Establecimiento> establecimientosConPlato = new LinkedList<>();
         for (Establecimiento e : establecimientos) {
         if (e.tienePlato(nombrePlato))
 establecimientosConPlato.add(e);
