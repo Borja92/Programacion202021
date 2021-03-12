@@ -7,9 +7,9 @@ public class CalculadoraDistancia {
         this.ubicacionActual = ubicacionActual;
     }
 
-    public double caluclarDisntacia(Establecimiento establecimiento){
+    public double calcularDistancia(Establecimiento establecimiento){
 
-        Coordenadas coordenadasEstablecimiento = establecimiento.getUbicacion();
+       Coordenadas coordenadasEstablecimiento = establecimiento.getUbicacion();
 
         double theta = ubicacionActual.getLongitud() - coordenadasEstablecimiento.getLongitud();
         double dist = Math.sin(Math.toRadians(ubicacionActual.getLatitud())) *

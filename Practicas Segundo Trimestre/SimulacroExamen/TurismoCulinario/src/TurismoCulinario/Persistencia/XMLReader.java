@@ -39,19 +39,13 @@ public class XMLReader {
 
             doc.getDocumentElement().normalize();
 
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IllegalArgumentException e) {
-            e.printStackTrace();
-        } catch (ParserConfigurationException e) {
+        } catch (IOException | SAXException | IllegalArgumentException | ParserConfigurationException e) {
             e.printStackTrace();
         }
     }
 
-    public void setCiudades(Map<String,Ciudad> ciudades){
-        this.ciudades = ciudades;
+    public void setCiudades(Map<String,Ciudad> ciudades)  {
+        this.ciudades=ciudades;
     }
 
     public Map<String,Ciudad> read() throws XPathExpressionException {
