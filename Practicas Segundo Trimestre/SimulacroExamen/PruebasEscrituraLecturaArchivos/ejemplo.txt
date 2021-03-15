@@ -1,0 +1,9 @@
+Esto es un ejemplo de un .txt
+esto son
+varios
+saltos
+de línea
+ñ
+@
+87 varios          espacios
+dos        tabulaciones
