@@ -1,109 +1,152 @@
+/**
+ * Clase Parray que complementa el array nativo de java
+ *
+ * @author A. Borja Badía Checa
+ * @version 1.0
+ */
+
 public class Parray {
 
     private int[] array;
 
-    //Constructor inicializa array por parámetro
-    public Parray(int size) {
 
-        array = new int[size];
+    /**
+     * Constructor que inicializa el array con un tamaño
+     *
+     * @param longitudArray Tamaño del array que queremos incializar
+     */
+    public Parray(int longitudArray) {
+        this.array = new int[longitudArray];
+
     }
 
-    //Constructor inicializa array con valores de otro array pasado por parámetros
-    public Parray(int[] arrayParametro) {
+    /**
+     * Constructor que dado un array copia todos sus datos
+     *
+     * @param valoresArray Array al que queremos realizar una copia
+     */
+    public Parray(int[] valoresArray) {
 
-        array = new int[arrayParametro.length];
-        for (int i = 0; i < arrayParametro.length; i++) {
-            array[i] = arrayParametro[i];
+        this.array = valoresArray;
+    }
+
+    public int count() {
+
+        return this.array.length;
+    }
+
+    private int[] getArray() {
+
+        return this.array;
+    }
+
+    /**
+     * Metodo que dado un indice devuelve el valor aosciado
+     *
+     * @param indice Indice del cual queremos obtener el valor del array
+     * @return valor del array sobre el indice
+     */
+    public int getIndice(int indice) {
+        if (indice <= getArray().length) {
+
+            return this.array[indice];
+        } else return -1;
+    }
+
+    /**
+     * Metodo donde introducimos en el indice especificado el valor dado por parametros
+     *
+     * @param indice Indice donde se va a comprobar introducir el valor
+     * @param valor  Valor que queremos añadir
+     */
+    public void setIndex(int indice, int valor) {
+        if (indice <= getArray().length) {
+            getArray()[indice] = valor;
         }
-    }
-
-    //Constructor vacío
-    /*public Parray() {
-
-    }*/
-//Getters&Setters
-    public int[] getArray() {
-        return array;
-    }
-
-    public void setArray(int[] array) {
-        this.array = array;
-    }
-
-    //Método que devuelve el número de elementos de un array
-    public int ContadorValoresArray(int[] array) {
-        int numElementosEnArray = array.length;
-        return numElementosEnArray;
 
     }
 
-    //Método que devuelve el valor del indice de un array pasado por parámetros
-    public int DevuelveValorEnArraySegunIndice(int[] array, int indice) {
-        return array[indice];
-    }
+    /**
+     * Metodo que dado un valor busca si existe y devuelve un booleano
+     *
+     * @param valor Valor del que queremos saber si existe en el array al menos una vez
+     * @return true si el valor existe en el array y false si no lo hace
+     */
+    public boolean in_array(int valor) {
 
-//Método introduce un valor en una posición determinada en un array
-
-    public int IntroduceValorEnIndice(int[] array, int indice, int valor) {
-
-        return array[indice] = valor;
-
-    }
-
-    //Método que comprueba si un valor existe en el array
-
-    public boolean ValorEnArray(int[] array, int valor) {
-
-        boolean elValorSeEncuentraEnElArray = false;
-        for (int i = 0; i < array.length; i++) {
-
-            if (valor == array[i]) {
-
-                return elValorSeEncuentraEnElArray = true;
+        for (int n : this.array) {
+            if (valor == n) {
+                return true;
             }
         }
-        return Boolean.parseBoolean("¿El valor se encuentra en el array?" + elValorSeEncuentraEnElArray);
+        return false;
     }
 
-//Llena el array con valores pasados por parámetros indicando el indice en el que se empieza
+    /**
+     * Metodo donde introducimos a partir de un indice tantos valores como sea indicado
+     *
+     * @param indice       Indice por donde empezamos a añadir los valores
+     * @param repeticiones Cantidad de veces que queremos añadir el valor
+     * @param valor        valor que queremos añadir
+     */
+    public void array_fill(int indice, int repeticiones, int valor) throws Exception {
 
-    public int[] RellenarArrayConValoresApartirDeIndiceIndicado(int[] array, int indice, int valor, int numVeces) {
-        do {
-
-            numVeces--;
-            array[indice] = valor;
-            indice++;
-        } while (numVeces > 0);
-
-return array;
-    }
-//Método que devuelve un array con los elementos en orden inverso
-
-public int[]  DevolverArrayInvertido(int [] array){
-int [] arrayAlReves = new int[array.length];
-    for (int i = array.length-1, j=0; i >=0 ; i--,j++) {
-            arrayAlReves[j]=array[i];
-            //System.out.print(arrayAlReves[j]+" ");
-    }
-    return arrayAlReves;
-}
-
-//Método que calcula la diferencia entre arrays y devuelve los valores no repetidos
-
-public int [] ValoresDiferentesEnArrays(int[] array1, int[] array2){
-        int[] auxArray=new int[array1.length];
-        int aux = 0;
-    for (int i = 0, j=0; i <array1.length ;  i++, j++) {
-
-        if (array1[i]!=array2[j]){
-            aux=array1[i];
+        if ((indice + repeticiones) > this.count()) {
+            throw new Exception("El número de repeticiones excede la longitud del array");
         }
-auxArray[i]=aux;
-        System.out.println(aux.);
+        for (int i = 0; i < repeticiones; i++) {
+            this.setIndex(indice + i, valor);
+        }
     }
 
-        return auxArray;
-}
+    /**
+     * Metodo un array con los valores invertidos respecto a nuestro parray
+     *
+     * @return Array invertido
+     */
+    public void array_reverse() {
+        int aux;
+        for (int i = 0; i < this.count() / 2; i++) {
+            aux = this.getIndice(i);
+            this.setIndex(i, this.getIndice(this.count() - 1) - i);
+            this.setIndex((this.count() - 1) - i, aux);
+        }
+    }
+
+    /**
+     * Metodo que dado un array devuelve otro array con todos los valores que no coincidan con nuestro Parray
+     *
+     * @param arrayParam Array con el que vamos a comparar nuestro parray
+     * @return Array con los valores que no coinciden con nuestro parray
+     */
+    public Parray array_diff(Parray arrayParam) {
+
+        int count = 0;
+        for (int i = 0; i < arrayParam.count(); i++) {
+            if (!this.in_array(arrayParam.getIndice(i))) count++;
+        }
+
+        Parray parray = new Parray(count);
+
+        count = 0;
+        for (int k = 0; k < arrayParam.count(); k++) {
+            if (!this.in_array(arrayParam.getIndice(k))) ;
+            {
+                count++;
+            }
+        }
+
+        return parray;
+    }
+
+    public void mostrar() {
+
+
+        for (int valor : this.array) {
+            System.out.print(valor + ", ");
+        }
+        System.out.println();
+    }
 
 }
 

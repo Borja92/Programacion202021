@@ -15,7 +15,7 @@ public class Test {
         System.out.println();
         System.out.println("Alumno por nombre: " + secretaria.getAlumnoPorNombre("Alumno2"));
         System.out.println();
-        System.out.println("Actualizar un nombre: " + secretaria.actulizarNombreAlumno("12345678B", "Pepe"));
+        System.out.println("Actualizar un nombre: " + secretaria.actulizarNombreAlumno("12345678B", "Ariadna"));
         System.out.println();
         System.out.println("Actualizar un nombre: " + secretaria.actulizarNombreAlumno("12345678D", "Manolo"));
         System.out.println();

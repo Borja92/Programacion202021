@@ -42,14 +42,14 @@ public List<Alumno> getAlumnoPorNombre(String nombre) throws SQLException {
 public boolean actulizarNombreAlumno(String dni, String nombre) throws SQLException {
 Alumno alumno = new Alumno();
 alumno.setNombre(nombre);
-if (alumnoDAO.actualizarNombre(getAlumnoPorDNI(dni),nombre)>0){
+if (alumnoDAO.actualizarNombre(getAlumnoPorDNI(dni),nombre)){
     return true;
 } else
 return false;
     }
 
     public boolean eleminiarAlumno(String dni) throws SQLException {
-        if(alumnoDAO.deleteAlumno(getAlumnoPorDNI(dni))>0){
+        if(alumnoDAO.deleteAlumno(getAlumnoPorDNI(dni))){
             return true;
         } else return false;
     }

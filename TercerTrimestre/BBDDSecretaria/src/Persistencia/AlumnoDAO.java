@@ -17,11 +17,11 @@ public class AlumnoDAO {
 
     public int crear(Alumno alumno) throws SQLException {
         Connection conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("INSERT INTO Alumno(nombre,apellidos,dni) VALUES ('"+alumno.getNombre()+"','"+
-                        alumno.getApellidos()+"','" +
-                        alumno.getDni()+"')",
+        PreparedStatement statement = conn.prepareStatement("INSERT INTO Alumno(nombre,apellidos,dni) VALUES ('" + alumno.getNombre() + "','" +
+                        alumno.getApellidos() + "','" +
+                        alumno.getDni() + "')",
                 Statement.RETURN_GENERATED_KEYS);
-        int numFilas= statement.executeUpdate();
+        int numFilas = statement.executeUpdate();
         ResultSet result = statement.getGeneratedKeys();
         if (result.next())
             return result.getInt(1);
@@ -30,33 +30,33 @@ public class AlumnoDAO {
     }
 
     public List<Alumno> leerTodo() throws SQLException {
-Connection conn= dbConn.conectar();
-PreparedStatement statement = conn.prepareStatement("SELECT id, nombre, apellidos, dni FROM Alumno");
-ResultSet resultSet1=statement.executeQuery();
-List<Alumno> alumnos= new ArrayList<>();
+        Connection conn = dbConn.conectar();
+        PreparedStatement statement = conn.prepareStatement("SELECT id, nombre, apellidos, dni FROM Alumno");
+        ResultSet resultSet1 = statement.executeQuery();
+        List<Alumno> alumnos = new ArrayList<>();
 
-while (resultSet1.next()){
-    int id=resultSet1.getInt(1);
-    String nombre= resultSet1.getString(2);
-    String apellidos=resultSet1.getString(3);
-    String dni=resultSet1.getString(4);
-    Alumno alumno = new Alumno(id,nombre,apellidos,dni);
-alumnos.add(alumno);
-}
+        while (resultSet1.next()) {
+            int id = resultSet1.getInt(1);
+            String nombre = resultSet1.getString(2);
+            String apellidos = resultSet1.getString(3);
+            String dni = resultSet1.getString(4);
+            Alumno alumno = new Alumno(id, nombre, apellidos, dni);
+            alumnos.add(alumno);
+        }
         return alumnos;
     }
 
     public Alumno leer(String dni) throws SQLException {
         //SELECT * FROM ALUMNO WHERE dni = '12345678A';
-        List<Alumno>alumnos;
-      alumnos=leerTodo();
-       Alumno alumno= new Alumno();
-        for (Alumno a:alumnos) {
-            if (dni.equalsIgnoreCase(a.getDni())){
+        List<Alumno> alumnos;
+        alumnos = leerTodo();
+        Alumno alumno = new Alumno();
+        for (Alumno a : alumnos) {
+            if (dni.equalsIgnoreCase(a.getDni())) {
                 //System.out.println(a);
-            alumno=a;
+                alumno = a;
             }
-            if (alumno==null){
+            if (alumno == null) {
                 System.out.println("No hay coincidencias de DNI");
             }
         }
@@ -65,10 +65,10 @@ alumnos.add(alumno);
 
     public List<Alumno> leerPorNombre(String nombre) throws SQLException {
         List<Alumno> alumnos;
-        List<Alumno> alumnosQueSeLlamanIgual= new ArrayList<>();
-     alumnos=leerTodo();
-        for (Alumno a:alumnos) {
-            if (nombre.equalsIgnoreCase(a.getNombre())){
+        List<Alumno> alumnosQueSeLlamanIgual = new ArrayList<>();
+        alumnos = leerTodo();
+        for (Alumno a : alumnos) {
+            if (nombre.equalsIgnoreCase(a.getNombre())) {
                 alumnosQueSeLlamanIgual.add(a);
             }
         }
@@ -85,23 +85,28 @@ alumno=leer(alumno.getDni());
         }
         return false;
     }*/
-    public int actualizarNombre(Alumno alumno, String nombre) throws SQLException {
+    public boolean actualizarNombre(Alumno alumno, String nombre) throws SQLException {
         Connection conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("update Alumno set nombre ="+"'"+nombre+"'"+" where dni="+"'"+alumno.getDni()+"'");
-        //conn.close();
-        return statement.executeUpdate();
+        PreparedStatement statement = conn.prepareStatement("update Alumno set nombre =" + "'" + nombre + "'" + " where dni=" + "'" + alumno.getDni() + "'");
+        //
+        int valor = statement.executeUpdate();//Recogemos valor int, si el valor es >0 es que la operación se ha efectuado en n líneas
+        conn.close();
+        if (valor > 0) {
+            return true;
+        } else return false;
     }
 
 
-    public int deleteAlumno(Alumno alumno) throws SQLException {
+    public boolean deleteAlumno(Alumno alumno) throws SQLException {
         Connection conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("delete from Alumno where Alumno.dni="+"'"+alumno.getDni()+"'");
+        PreparedStatement statement = conn.prepareStatement("delete from Alumno where Alumno.dni=" + "'" + alumno.getDni() + "'");
         //conn.close();
-        return statement.executeUpdate();
+        int valor = statement.executeUpdate();
+        conn.close();
+        if (valor > 0) {
+            return true;
+        } else return false;
     }
-
-
-
 
 
 }

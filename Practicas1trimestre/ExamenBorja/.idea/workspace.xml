@@ -1,9 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eda27356-d785-4083-8c4d-492184a76e2e" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="eda27356-d785-4083-8c4d-492184a76e2e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Parray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/dataSources/b2b1e34c-3da0-496e-8252-288325273c99.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/dataSources/b2b1e34c-3da0-496e-8252-288325273c99.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Persistencia/AlumnoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Persistencia/AlumnoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Persistencia/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Persistencia/DBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Secretaria/Secretaria.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Secretaria/Secretaria.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/out/production/EjemploEstructura/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Persistencia/AlumnoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Persistencia/AlumnoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Persistencia/DBConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Secretaria/Secretaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Secretaria/Secretaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../TercerTrimestre/BBDDSecretaria/src/Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,44 +24,6 @@
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Parray.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
-              <folding>
-                <element signature="e#1023#1024#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ejercicio2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1406">
-              <caret line="74" column="22" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -59,6 +34,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -75,6 +58,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectId" id="1qTxoLC05YZLcFERzPgPloWh268" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -82,22 +66,16 @@
     </navigator>
     <panes />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/GitHubDesktopSetup.exe" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../ExamenBorja160321/Concesionario" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Ejercicio2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -114,6 +92,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -121,6 +110,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,6 +121,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607601450109</updated>
+      <workItem from="1617117559068" duration="12273000" />
     </task>
     <servers />
   </component>
@@ -164,6 +155,9 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../Ejercicio1/Main.java">
