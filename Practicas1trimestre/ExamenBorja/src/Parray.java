@@ -26,7 +26,11 @@ public class Parray {
      * @param valoresArray Array al que queremos realizar una copia
      */
     public Parray(int[] valoresArray) {
+array= new int[valoresArray.length];
+        for (int i = 0; i < array.length; i++) {
+            setIndex(i,valoresArray[i]);
 
+        }
         this.array = valoresArray;
     }
 
@@ -46,11 +50,8 @@ public class Parray {
      * @param indice Indice del cual queremos obtener el valor del array
      * @return valor del array sobre el indice
      */
-    public int getIndice(int indice) {
-        if (indice <= getArray().length) {
-
-            return this.array[indice];
-        } else return -1;
+    public int getIndex(int indice) {
+        return this.array[indice];
     }
 
     /**
@@ -106,11 +107,13 @@ public class Parray {
      */
     public void array_reverse() {
         int aux;
-        for (int i = 0; i < this.count() / 2; i++) {
-            aux = this.getIndice(i);
-            this.setIndex(i, this.getIndice(this.count() - 1) - i);
-            this.setIndex((this.count() - 1) - i, aux);
+        for (int i=0;i<this.count()/2;i++)
+        {
+            aux=this.getIndex(i);
+            this.setIndex(i,this.getIndex((this.count()-1)-i));
+            this.setIndex((this.count()-1)-i,aux);
         }
+
     }
 
     /**
@@ -121,20 +124,19 @@ public class Parray {
      */
     public Parray array_diff(Parray arrayParam) {
 
-        int count = 0;
-        for (int i = 0; i < arrayParam.count(); i++) {
-            if (!this.in_array(arrayParam.getIndice(i))) count++;
-        }
+        int cont=0;
 
-        Parray parray = new Parray(count);
+        for (int i=0;i<arrayParam.count();i++)
+            if (!this.in_array(arrayParam.getIndex(i))) cont++;
 
-        count = 0;
-        for (int k = 0; k < arrayParam.count(); k++) {
-            if (!this.in_array(arrayParam.getIndice(k))) ;
-            {
-                count++;
+        Parray parray = new Parray(cont);
+
+        cont=0;
+        for (int i=0;i<arrayParam.count();i++)
+            if (!this.in_array(arrayParam.getIndex(i)))
+            { parray.setIndex(cont,arrayParam.getIndex(i));
+                cont++;
             }
-        }
 
         return parray;
     }
