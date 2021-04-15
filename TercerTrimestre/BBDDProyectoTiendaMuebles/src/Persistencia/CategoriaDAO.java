@@ -52,18 +52,19 @@ public class CategoriaDAO {
     }
 
     public List<String> getAll()  {
-        List<String> categoriaDAOS = new ArrayList<>();
+        List<String> categoriaDAOS = null;
         try {
             conn = dbConn.conectar();
 
 
             PreparedStatement statement = conn.prepareStatement("SELECT id, nombre, dni  FROM categoria");
-           /* if (!statement.execute()) {//No sé cómo gestionar, el devolver un null si la sentecia falla
-                return null;
-            }*/
+
 
 
             ResultSet resultSet = statement.executeQuery();
+if (resultSet.next()){
+     categoriaDAOS=new ArrayList<>();
+}
             while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
@@ -71,7 +72,7 @@ public class CategoriaDAO {
             }
 
         } catch (SQLException sqle) {
-            System.out.println((String) null);
+            categoriaDAOS=null;
         }
         return categoriaDAOS;
 
