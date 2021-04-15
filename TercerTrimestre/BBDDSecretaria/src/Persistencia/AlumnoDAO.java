@@ -28,12 +28,24 @@ public class AlumnoDAO {
         else
             return -1;
     }
+    /*public boolean crear(Alumno alumno) throws SQLException {
+
+        Connection conn = dbConn.conectar();
+        PreparedStatement statement = conn.prepareStatement("INSERT INTO Alumno(nombre,apellidos,dni) VALUES ('" + alumno.getNombre() + "','" +
+                        alumno.getApellidos() + "','" +
+                        alumno.getDni() + "')",
+                Statement.RETURN_GENERATED_KEYS);
+        if (result.next())
+            alumno.setId(result.getInt(1));
+        else
+            return -1;
+    }*/
 
     public List<Alumno> leerTodo() throws SQLException {
         Connection conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("SELECT id, nombre, apellidos, dni FROM Alumno");
         ResultSet resultSet1 = statement.executeQuery();
-        List<Alumno> alumnos = new ArrayList<>();
+        List<Alumno> alumnos = new ArrayList<>();// para devolver null en caso de que el alumno no exista
 
         while (resultSet1.next()) {
             int id = resultSet1.getInt(1);
@@ -95,7 +107,12 @@ alumno=leer(alumno.getDni());
             return true;
         } else return false;
     }
+/*public int actualizar(Alumno alumno, String campoACambiar, String valor) throws SQLException {
 
+        Connection connection=dbConn.conectar();
+        connection.prepareStatement(" UPDATE Alumno SET "+ campoACambiar +" =  + " + valor + "'" + "WHERE dni =" + "'"+ dni + "'").executeUpdate();
+
+}*/
 
     public boolean deleteAlumno(Alumno alumno) throws SQLException {
         Connection conn = dbConn.conectar();

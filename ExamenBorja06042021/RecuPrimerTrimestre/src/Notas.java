@@ -21,17 +21,20 @@ public class Notas {
 
     private void introducirNuevaNota(double nota){
 boolean notaValidad;
-        if (nota>0&&nota<=10){
-            notaValidad=true;
-
-        }
-        for (int i = 0; i <this.notasArray.length ; i++) {
-            if (notasArray[i]!=0&&i<99) {
+do {
+    if (nota > 0 && nota <= 10) {
+        notaValidad = true;
+        for (int i = 0; i < this.notasArray.length; i++) {
+            if (notasArray[i] != 0 && i < 99) {
                 this.notasArray[i] = nota;
                 //break;
             } else
-            System.out.println("La nota no ha podido ser añadida. El array está completo!!");
+                System.out.println("La nota no ha podido ser añadida. El array está completo!!");
         }
+    } else System.out.println("La nota debe ser entre 0-10 y sus decimales!!");
+}
+    while (notaValidad=false);
+
     }
 
     private void mostrarNotas(){
