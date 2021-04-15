@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/BBDDProyectoTiendaMuebles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/prueba.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prueba/src/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenBorja06042021/RecuPrimerTrimestre/out/production/RecuPrimerTrimestre/Notas.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenBorja06042021/RecuPrimerTrimestre/out/production/RecuPrimerTrimestre/Notas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ExamenBorja06042021/RecuPrimerTrimestre/src/Notas.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ExamenBorja06042021/RecuPrimerTrimestre/src/Notas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/.idea/dataSources/b2b1e34c-3da0-496e-8252-288325273c99.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/.idea/dataSources/b2b1e34c-3da0-496e-8252-288325273c99.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/out/production/EjemploEstructura/Persistencia/AlumnoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/out/production/EjemploEstructura/Persistencia/AlumnoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/out/production/EjemploEstructura/Persistencia/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/out/production/EjemploEstructura/Persistencia/DBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/src/Persistencia/AlumnoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/src/Persistencia/AlumnoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BBDDSecretaria/src/Persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BBDDSecretaria/src/Persistencia/DBConn.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1r6a6dNkLFEG1JJyDzJdio55mPY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="BBDDProyectoTiendaMuebles" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="" />
+      <created>1618298824322</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1618298824322</updated>
+      <workItem from="1618298828653" duration="32986000" />
+      <workItem from="1618482992505" duration="697000" />
+      <workItem from="1618483915747" duration="882000" />
+      <workItem from="1618485074512" duration="1347000" />
+      <workItem from="1618486499988" duration="42000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
