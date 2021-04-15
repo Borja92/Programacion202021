@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="up">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/11387836-c018-4441-b629-f8acaaaa4646.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11387836-c018-4441-b629-f8acaaaa4646.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/TiendaMuebles/Elemento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/TiendaMuebles/Elemento.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/ModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ModeloDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TiendaMuebles/Elemento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TiendaMuebles/Elemento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/prueba.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../prueba/src/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TiendaMuebles/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TiendaMuebles/Modelo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +100,7 @@
       <workItem from="1618483915747" duration="882000" />
       <workItem from="1618485074512" duration="1347000" />
       <workItem from="1618486499988" duration="42000" />
-      <workItem from="1618486574559" duration="6047000" />
+      <workItem from="1618486574559" duration="23004000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1618486798230</created>

@@ -3,11 +3,14 @@ package TiendaMuebles;
 public class Elemento {
     private String tipo;
     private String codigo;
-public Elemento(){
+public Elemento(String codigo, String tipo){
     this.tipo=tipo;
     this.codigo=codigo;
 
 }
+
+    public Elemento() {
+    }
 
     public String getTipo() {
         return tipo;
@@ -24,10 +27,7 @@ public Elemento(){
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
-public Elemento getElemento(){
-  Elemento elemento = new Elemento();
-    return  elemento;
-}
+
 
     @Override
     public String toString() {

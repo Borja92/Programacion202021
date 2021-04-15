@@ -135,7 +135,7 @@ if (resultSet.next()){
         while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
-                seccionDAO.add("id: " + id + " Nom.Categoría: " + nombre);
+                seccionDAO.add( id + nombre);
             }
 
         } catch (SQLException sqle) {
