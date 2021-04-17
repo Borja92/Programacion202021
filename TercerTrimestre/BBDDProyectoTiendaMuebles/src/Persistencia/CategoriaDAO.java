@@ -7,12 +7,17 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase CategoriaDAO
+ */
 public class CategoriaDAO {
 
     private Connection conn;
     DBConn dbConn;
 
-
+    /**
+     * Constructor predeterminado
+     */
     public CategoriaDAO() {
 
         dbConn = new DBConn();
@@ -27,6 +32,13 @@ public class CategoriaDAO {
     public List<String> getAll(){}
 */
 
+    /**
+     * Método crear
+     *
+     * @param categoria
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean crear(String categoria) throws SQLException {
         conn = dbConn.conectar();
 
@@ -40,6 +52,14 @@ public class CategoriaDAO {
         } else return false;
     }
 
+    /**
+     * Método actualizar
+     *
+     * @param categoria
+     * @param nuevoNombre
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean actualizar(String categoria, String nuevoNombre) throws SQLException {
         conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("UPDATE categoria SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + categoria + "'");
@@ -51,7 +71,12 @@ public class CategoriaDAO {
 
     }
 
-    public List<String> getAll()  {
+    /**
+     * Método getAll
+     *
+     * @return Lis<String> or null
+     */
+    public List<String> getAll() {
         List<String> categoriaDAOS = null;
         try {
             conn = dbConn.conectar();
@@ -60,46 +85,63 @@ public class CategoriaDAO {
             PreparedStatement statement = conn.prepareStatement("SELECT id, nombre  FROM categoria");
 
 
-
             ResultSet resultSet = statement.executeQuery();
-if (resultSet.next()){
-     categoriaDAOS=new ArrayList<>();
-}
+            if (resultSet.next()) {
+                categoriaDAOS = new ArrayList<>();
+            }
             while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
-                categoriaDAOS.add("id: " + id + " Nom.Categoría: " + nombre);
+                categoriaDAOS.add(id + " " + nombre);
             }
 
         } catch (SQLException sqle) {
-            categoriaDAOS=null;
+            categoriaDAOS = null;
         }
         return categoriaDAOS;
 
     }
 
-    public String getCategoriaById(int id) throws SQLException {
-        conn = dbConn.conectar();
+    /**
+     * getCategoriaById
+     *
+     * @param id
+     * @return String or null
+     * @throws SQLException
+     */
+    public String getCategoriaById(int id) {
         String categoria = "";
-        int indice;
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM categoria WHERE id=" + "'" + id + "'");
 
-        ResultSet resultSet = statement.executeQuery();
+        try {
+            conn = dbConn.conectar();
 
-        while (resultSet.next()) {
-            indice = resultSet.getInt(1);
+            int indice;
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM categoria WHERE id=" + "'" + id + "'");
 
-            if (indice == id) {
-                categoria = resultSet.getString(2);
-                return categoria;
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                indice = resultSet.getInt(1);
+
+                if (indice == id) {
+                    categoria = resultSet.getString(2);
+                    return categoria;
+                }
             }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+            return null;
         }
-
-        dbConn.desconectar();
-        return categoria + null;
+        return null;
     }
 
-    public int getId(String categoria)  {
+    /**
+     * getId
+     *
+     * @param categoria
+     * @return int
+     */
+    public int getId(String categoria) {
         int indice = -1;
         try {
             conn = dbConn.conectar();
@@ -108,15 +150,11 @@ if (resultSet.next()){
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 String cat = resultSet.getString(2);
-
                 if (categoria.equalsIgnoreCase(cat)) {
                     indice = resultSet.getInt(1);
-
-                } else return Integer.parseInt(null);
-
+                }
             }
             dbConn.desconectar();
-
 
         } catch (SQLException sqle) {
             System.out.println(indice);
@@ -124,6 +162,13 @@ if (resultSet.next()){
         return indice;
     }
 
+    /**
+     * exists
+     *
+     * @param categoria
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean exists(String categoria) throws SQLException {
         conn = dbConn.conectar();
 
@@ -139,6 +184,13 @@ if (resultSet.next()){
         return false;
     }
 
+    /**
+     * borrar
+     *
+     * @param categoria
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean borrar(String categoria) throws SQLException {
         conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("DELETE FROM categoria WHERE nombre=" + "'" + categoria + "'");

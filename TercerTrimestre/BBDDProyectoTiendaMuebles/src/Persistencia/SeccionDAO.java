@@ -7,10 +7,20 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase SeccionDAO
+ */
 public class SeccionDAO {
+    /**
+     * Elementos y variables de la clase
+     */
     private Connection conn;
     DBConn dbConn;
-public SeccionDAO(){
+
+    /**
+     * Constructor predeterminado
+     */
+    public SeccionDAO(){
 
     dbConn= new DBConn();
 }
@@ -25,6 +35,12 @@ public SeccionDAO(){
     public List<String> getAll()
 */
 
+    /**
+     * Método crear
+     * @param seccion
+     * @return boolean or int
+     * @throws SQLException
+     */
     public boolean crear(String seccion) throws SQLException {
         conn = dbConn.conectar();
 
@@ -38,6 +54,12 @@ public SeccionDAO(){
         } else return false;
     }
 
+    /**
+     * Método exist
+     * @param nombre
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean exists(String nombre) throws SQLException {
        conn= dbConn.conectar();
 
@@ -53,6 +75,13 @@ public SeccionDAO(){
         return false;
     }
 
+    /**
+     * Método actualizar
+     * @param seccion
+     * @param nuevoNombre
+     * @return boolean or int
+     * @throws SQLException
+     */
     public boolean actualizar(String seccion, String nuevoNombre) throws SQLException {
 
 
@@ -65,6 +94,12 @@ public SeccionDAO(){
         } else return false;
     }
 
+    /**
+     * Método borrar
+     * @param nombre
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean borrar(String nombre) throws SQLException {
 
       conn= dbConn.conectar();
@@ -77,6 +112,12 @@ public SeccionDAO(){
         return false;
 
     }
+
+    /**
+     * Método getId
+     * @param seccion
+     * @return int
+     */
     public int getId(String seccion){
         int indice = -1;
         try {
@@ -101,6 +142,12 @@ public SeccionDAO(){
         return indice;
     }
 
+    /**
+     * Método getSeccionById
+     * @param id
+     * @return String or null
+     * @throws SQLException
+     */
     public String getSeccionById(int id) throws SQLException {
 
        conn=dbConn.conectar();
@@ -122,16 +169,18 @@ public SeccionDAO(){
         return seccion + null;
     }
 
+    /**
+     * Método getAll
+     * @return List<String> or null
+     */
     public List<String> getAll(){
-        List<String> seccionDAO = null;
+        List<String> seccionDAO = new ArrayList<>();
         try {
             conn = dbConn.conectar();
 
             PreparedStatement statement = conn.prepareStatement("SELECT id, nombre  FROM seccion");
             ResultSet resultSet = statement.executeQuery();
-if (resultSet.next()){
-    seccionDAO= new ArrayList<>();
-}
+
         while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
@@ -139,7 +188,7 @@ if (resultSet.next()){
             }
 
         } catch (SQLException sqle) {
-            seccionDAO=null;
+            return null;
         }
         return seccionDAO;
 

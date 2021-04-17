@@ -10,16 +10,16 @@
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ModeloDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/TiendaMuebles/Modelo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/TiendaMuebles/Modelo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/DBConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/ModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ModeloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TiendaMuebles/Modelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TiendaMuebles/Modelo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +63,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Application.Test">
     <configuration name="ElementoModeloDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -81,17 +82,6 @@
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="BBDDProyectoTiendaMuebles" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -117,6 +107,10 @@
       <workItem from="1618485074512" duration="1347000" />
       <workItem from="1618486499988" duration="42000" />
       <workItem from="1618486574559" duration="44045000" />
+      <workItem from="1618679728212" duration="335000" />
+      <workItem from="1618680143392" duration="3054000" />
+      <workItem from="1618684444708" duration="2529000" />
+      <workItem from="1618687121481" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1618486798230</created>

@@ -9,13 +9,18 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Clase ElementoDAO
+ */
 public class ElementoModeloDAO {
     private Connection conn;
     private ElementoDAO elementoDAO;
     private ModeloDAO modeloDAO;
     private DBConn dbConn;
 
+    /**
+     * Constructor predeterminado
+     */
     public ElementoModeloDAO() {
         dbConn = new DBConn();
         elementoDAO = new ElementoDAO();
@@ -31,7 +36,14 @@ public class ElementoModeloDAO {
     public boolean borrar(String codigoElemento, String codigoModelo)
 */
 
-
+    /**
+     * crear
+     *
+     * @param codigoElemento
+     * @param codigoModelo
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean crear(String codigoElemento, String codigoModelo) throws SQLException {
 
         conn = dbConn.conectar();
@@ -43,6 +55,13 @@ public class ElementoModeloDAO {
         } else return false;
     }
 
+    /**
+     * getId
+     *
+     * @param codigoElemento
+     * @param codigoModelo
+     * @return int
+     */
     public int getId(String codigoElemento, String codigoModelo) {
 
         int indice = -1;
@@ -64,15 +83,36 @@ public class ElementoModeloDAO {
         return indice;
     }
 
+    /**
+     * getIdElemento
+     *
+     * @param codigoElemento
+     * @return
+     */
     private int getIdElemento(String codigoElemento) {
         return elementoDAO.getId(codigoElemento);
 
     }
 
+    /**
+     * getIdModelo
+     *
+     * @param codigoModelo
+     * @return int
+     */
     private int getIdModelo(String codigoModelo) {
         return modeloDAO.getId(codigoModelo);
     }
 
+    /**
+     * actualizarModelo
+     *
+     * @param codigoElemento
+     * @param codigoModelo
+     * @param codigoNuevoModelo
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean actualizarModelo(String codigoElemento, String codigoModelo, String codigoNuevoModelo) throws SQLException {
 
         conn = dbConn.conectar();
@@ -85,17 +125,19 @@ public class ElementoModeloDAO {
 
     }
 
+    /**
+     * getElementoByCodigoModelo
+     *
+     * @param codigoModelo
+     * @return List<Elemento> or null
+     */
     public List<Elemento> getElementosByCodigoModelo(String codigoModelo) {
         List<Elemento> listaElementos = new ArrayList<>();
         try {
             conn = dbConn.conectar();
-           //System.out.println(elementoDAO.getElementoById(56));
 
-            //PreparedStatement statement = conn.prepareStatement("SELECT id_elemento FROM elemento_modelo WHERE id_modelo =" + "'" + getIdElemento(codigoModelo) + "'");
-           ResultSet resultSet = conn.prepareStatement("SELECT id_elemento FROM elemento_modelo WHERE id_modelo =" + getIdModelo(codigoModelo)).executeQuery();
-//listaElementos.add(elementoDAO.getElementoById(resultSet.getInt(1)));
+            ResultSet resultSet = conn.prepareStatement("SELECT id_elemento FROM elemento_modelo WHERE id_modelo =" + getIdModelo(codigoModelo)).executeQuery();
             while (resultSet.next()) {
-                System.out.println("Holaaaa");
                 listaElementos.add(elementoDAO.getElementoById(resultSet.getInt(1)));
             }
 
@@ -105,6 +147,14 @@ public class ElementoModeloDAO {
         return listaElementos;
     }
 
+    /**
+     * borrrar
+     *
+     * @param codigoElemento
+     * @param codigoModelo
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean borrar(String codigoElemento, String codigoModelo) throws SQLException {
         conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento_modelo WHERE id_elemento=" + "'" + getIdElemento(codigoElemento) + "' AND  id_modelo=" + " '" + getIdModelo(codigoModelo) + "'");

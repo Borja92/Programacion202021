@@ -7,11 +7,17 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Clase ElementoDAO
+ */
 public class ElementoDAO {
     private TipoElementoDAO tipoElementoDAO;
     private Connection conn;
     private DBConn dbConn;
 
+    /**
+     * Constructor Clase ElementoDAO
+     */
     public ElementoDAO() {
         dbConn = new DBConn();
         tipoElementoDAO = new TipoElementoDAO();
@@ -25,7 +31,13 @@ public class ElementoDAO {
     public boolean actualizar(String codigo, String nuevoCodigo)
     public boolean borrar(String codigo)*/
 
-
+    /**
+     * Método crear
+     *
+     * @param elemento
+     * @return boolean or int
+     * @throws SQLException
+     */
     public boolean crear(Elemento elemento) throws SQLException {
         conn = dbConn.conectar();
         int id_tipo_elemento = getIdTipoElemento(elemento.getTipo());
@@ -38,13 +50,23 @@ public class ElementoDAO {
 
     }
 
-
+    /**
+     * Método getIdTipoElemento
+     *
+     * @param tipoElemento
+     * @return
+     */
     private int getIdTipoElemento(String tipoElemento) {
 
         return tipoElementoDAO.getId(tipoElemento);
     }
 
-
+    /**
+     * Leer
+     *
+     * @param codigo
+     * @return String or null
+     */
     public Elemento leer(String codigo) {
         Elemento elemento = new Elemento();
 
@@ -68,6 +90,12 @@ public class ElementoDAO {
         return elemento;
     }
 
+    /**
+     * Método getId
+     *
+     * @param codigo
+     * @return int
+     */
     public int getId(String codigo) {
 
         int indice = -1;
@@ -86,12 +114,19 @@ public class ElementoDAO {
             dbConn.desconectar();
 
         } catch (SQLException sqle) {
-            System.out.println(indice);
+            return -1;
         }
         return indice;
 
     }
 
+    /**
+     * Método getElementoById
+     *
+     * @param id
+     * @return Elemento or null
+     * @throws SQLException
+     */
     public Elemento getElementoById(int id) throws SQLException {
         conn = dbConn.conectar();
         Elemento elemento = new Elemento();
@@ -114,6 +149,14 @@ public class ElementoDAO {
         return null;
     }
 
+    /**
+     * Método actualizar
+     *
+     * @param codigo
+     * @param nuevoCodigo
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean actualizar(String codigo, String nuevoCodigo) throws SQLException {
         conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("UPDATE elemento SET codigo =" + "'" + nuevoCodigo + "'" + " where codigo=" + "'" + codigo + "'");
@@ -125,6 +168,13 @@ public class ElementoDAO {
 
     }
 
+    /**
+     * Método borrar
+     *
+     * @param codigo
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean borrar(String codigo) throws SQLException {
         conn = dbConn.conectar();
         PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento WHERE codigo=" + "'" + codigo + "'");

@@ -7,10 +7,16 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase TipoElementoDAO
+ */
 public class TipoElementoDAO {
     private Connection conn;
     private DBConn dbConn;
 
+    /**
+     * Constructor predeterminado
+     */
     public TipoElementoDAO() {
         dbConn = new DBConn();
     }
@@ -24,6 +30,13 @@ public class TipoElementoDAO {
     public boolean exists(String tipoElemento)
     public boolean borrar(String nombre)*/
 
+    /**
+     * Crear
+     *
+     * @param nombre
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean crear(String nombre) throws SQLException {
 
         conn = dbConn.conectar();
@@ -36,7 +49,13 @@ public class TipoElementoDAO {
 
     }
 
-
+    /**
+     * getTipoElementoById
+     *
+     * @param id
+     * @return String or null
+     * @throws SQLException
+     */
     public String getTipoElementoById(int id) throws SQLException {
 
         conn = dbConn.conectar();
@@ -55,9 +74,15 @@ public class TipoElementoDAO {
             }
         }
         dbConn.desconectar();
-        return tipoElemento + null;
+        return null;
     }
 
+    /**
+     * getId
+     *
+     * @param tipoElemento
+     * @return int
+     */
     public int getId(String tipoElemento) {
         int indice = -1;
         try {
@@ -70,18 +95,23 @@ public class TipoElementoDAO {
 
                 if (tipoElemento.equalsIgnoreCase(tpElemento)) {
                     indice = resultSet.getInt(1);
-
-                } else return Integer.parseInt(null);
-
+                }
             }
             dbConn.desconectar();
-
         } catch (SQLException sqle) {
-            System.out.println(indice);
+            return -1;
         }
         return indice;
     }
 
+    /**
+     * actualizar
+     *
+     * @param tipoElemento
+     * @param nuevoNombre
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean actualizar(String tipoElemento, String nuevoNombre) throws SQLException {
 
 
@@ -94,6 +124,13 @@ public class TipoElementoDAO {
         } else return false;
     }
 
+    /**
+     * exists
+     *
+     * @param tipoElemento
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean exists(String tipoElemento) throws SQLException {
         conn = dbConn.conectar();
 
@@ -103,12 +140,18 @@ public class TipoElementoDAO {
             if (resultSet.getString(1).equalsIgnoreCase(tipoElemento)) {
                 return true;
             }
-
         }
         dbConn.desconectar();
         return false;
     }
 
+    /**
+     * borrar
+     *
+     * @param tipoElemento
+     * @return boolean
+     * @throws SQLException
+     */
     public boolean borrar(String tipoElemento) throws SQLException {
 
         conn = dbConn.conectar();
@@ -122,24 +165,27 @@ public class TipoElementoDAO {
 
     }
 
+    /**
+     * getAll
+     *
+     * @return List<String> or null
+     */
     public List<String> getAll() {
-        List<String> tipoElementoDAOList = null;
+        List<String> tipoElementoDAOList = new ArrayList<>();
         try {
             conn = dbConn.conectar();
 
             PreparedStatement statement = conn.prepareStatement("SELECT id, nombre  FROM  tipo_elemento");
             ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                tipoElementoDAOList = new ArrayList<>();
-            }
+
             while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
-                tipoElementoDAOList.add(id + "-" + nombre);
+                tipoElementoDAOList.add(id + " " + nombre);
             }
 
         } catch (SQLException sqle) {
-            tipoElementoDAOList = null;
+            return null;
         }
         return tipoElementoDAOList;
 
