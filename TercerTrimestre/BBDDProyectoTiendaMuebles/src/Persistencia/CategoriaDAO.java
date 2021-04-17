@@ -57,7 +57,7 @@ public class CategoriaDAO {
             conn = dbConn.conectar();
 
 
-            PreparedStatement statement = conn.prepareStatement("SELECT id, nombre, dni  FROM categoria");
+            PreparedStatement statement = conn.prepareStatement("SELECT id, nombre  FROM categoria");
 
 
 
@@ -104,7 +104,7 @@ if (resultSet.next()){
         try {
             conn = dbConn.conectar();
 
-            PreparedStatement statement = conn.prepareStatement("SELECT * FROM catAgoria WHERE nombre=" + "'" + categoria + "'");
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM categoria WHERE nombre=" + "'" + categoria + "'");
             ResultSet resultSet = statement.executeQuery();
             while (resultSet.next()) {
                 String cat = resultSet.getString(2);

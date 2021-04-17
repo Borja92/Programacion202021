@@ -9,18 +9,16 @@ public class Modelo {
     private String seccion;
     private String categoria;
 
-    public Modelo() {
-        this.elementos = elementos;
+
+
+    public Modelo( String codigo, String seccion, String categoria) {
+        this.elementos = new ArrayList<>();
         this.codigo = codigo;
         this.seccion = seccion;
         this.categoria = categoria;
     }
 
-    public Modelo(List<Elemento> elementos, String codigo, String seccion, String categoria) {
-        this.elementos = new ArrayList<>();
-        this.codigo = codigo;
-        this.seccion = seccion;
-        this.categoria = categoria;
+    public Modelo() {
     }
 
     public List<Elemento> getElementos() {

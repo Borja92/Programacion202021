@@ -1,18 +1,11 @@
-import Persistencia.CategoriaDAO;
-import Persistencia.ElementoDAO;
-import Persistencia.SeccionDAO;
-import Persistencia.TipoElementoDAO;
-import TiendaMuebles.Elemento;
-import TiendaMuebles.Modelo;
+import Persistencia.*;
 
 import java.sql.SQLException;
 
 public class Test {
     public static void main(String[] args) throws SQLException {
-        Elemento elemento = new Elemento();
-        Modelo modelo = new Modelo();
-        CategoriaDAO categoriaDAO = new CategoriaDAO();
 
+        CategoriaDAO categoriaDAO = new CategoriaDAO();
        /* System.out.println("Pruebas CategoriaDAO: ");
         System.out.println("Categoria por id 75(Gama Económica): "+categoriaDAO.getCategoriaById(75));
         System.out.println("Categoria por id (no existe debe dar null): "+categoriaDAO.getCategoriaById(7));
@@ -26,6 +19,7 @@ public class Test {
         System.out.println("Devuelve true/false si la dependiendo si la categoria existe(false): "+categoriaDAO.exists("gama FALSA"));
        // System.out.println("Eliminar una categoria. true si ha sido eliminada si no false (true): "+categoriaDAO.borrar("gama alta"));
         System.out.println("Eliminar una categoria. true si ha sido eliminada si no false (false): "+categoriaDAO.borrar("gama FALSA"));*/
+
         SeccionDAO seccionDAO= new SeccionDAO();
         /*System.out.println("Pruebas SeccionDAO");
         System.out.println("Sección por id 76(Cocina): "+seccionDAO.getSeccionById(76));
@@ -62,8 +56,9 @@ public class Test {
         System.out.println("Devuelve true/false si tipo elemento existe(falso): "+tipoElementoDAO.exists("elemento falso"));
         System.out.println("Eliminar una tipo elemento, true si ha sido eliminada si no false (true)"+tipoElementoDAO.borrar("Armario"));
         System.out.println("Eliminar una tipo elemento, true si ha sido eliminada si no false (false)"+tipoElementoDAO.borrar("elemento falso"));*/
+
         ElementoDAO elementoDAO= new ElementoDAO();
-        System.out.println("Pruebas de ElementoDAO: ");
+        /*System.out.println("Pruebas de ElementoDAO: ");
         System.out.println("Crear un elemento en la tabla elemento: "+elementoDAO.crear(new Elemento("ComDa0","Comoda")));
         System.out.println("Devuelve un elemento por el id: "+elementoDAO.getElementoById(45));
         System.out.println("Devuelve el elemento por el código, con su tipo "+elementoDAO.leer("ComDa0"));
@@ -74,8 +69,33 @@ public class Test {
         System.out.println("Elimina un elemento: (true)"+elementoDAO.borrar("Mc02321"));
         System.out.println("Elimina un elemento: (false)"+elementoDAO.borrar("Mc02321"));
         System.out.println("Devuelve la id de un elemento a partir del código: "+elementoDAO.getId("ComDa0"));
-        System.out.println("Devuelve la id de un elemento a partir del código: -1 "+elementoDAO.getId("Mc02321"));
-
+        System.out.println("Devuelve la id de un elemento a partir del código: -1 "+elementoDAO.getId("Mc02321"));*/
+        ModeloDAO modeloDAO = new ModeloDAO();
+        //System.out.println("Crea un nuevo elemento: (true)"+modeloDAO.crear(new Modelo("TJ004","Terraza y Jardín","Gama Estándar")));
+        /*System.out.println("Crea un nuevo elemento: (true)"+modeloDAO.crear(new Modelo("TJ004","Terraza y Jardín","Gama Estándar")));
+        System.out.println("Crea un nuevo elemento: (true)"+modeloDAO.crear(new Modelo("DR067","Dormitorio","Gama Alta")));
+        System.out.println("Crea un nuevo elemento: (true)"+modeloDAO.crear(new Modelo("BÑ894","Baño","Gama Económica")));
+        System.out.println("Crea un nuevo elemento: (true)"+modeloDAO.crear(new Modelo("SL008","Salón","Gama Estándar")));*/
+       /* System.out.println("Actualiza codigo de modelo: (true)"+modeloDAO.actualizar("DR067", "DR007"));
+        System.out.println("Obtener modelos por categoria: (Estándar)"+modeloDAO.getCodigosModelosByCategoria("Gama Estándar"));
+        System.out.println("Obtener modelos por categoria: (lista vacía)"+modeloDAO.getCodigosModelosByCategoria("Gama Falsa"));
+        System.out.println("Obtener modelos por sección (Baño):"+modeloDAO.getCodigosModelosBySeccion("baño"));
+        System.out.println("Obtener todos los códigos de modelo: "+modeloDAO.getCodigosModelos());
+        System.out.println("Leer un modelo por código: "+modeloDAO.leer("DR007"));
+        System.out.println("Eliminar un modelo: (true)"+modeloDAO.borrar("TJ004"));
+        System.out.println("Eliminar un modelo: (false)"+modeloDAO.borrar("TJ004"));
+        System.out.println("Obtener un id de elemento por el código: "+modeloDAO.getId("DR007"));
+        System.out.println("Obtener un id de elemento por el código: (-1) "+modeloDAO.getId("TJ004"));*/
+ElementoModeloDAO elementoModeloDAO= new ElementoModeloDAO();
+        System.out.println("Pruebas de ElementoModelo");
+      //  System.out.println("Insertamos un nuevo objeto elementoModelo: (true)"+elementoModeloDAO.crear("Mc0331","C1001"));
+     ///Preguntar por valores repetidos en esta tabla
+    //    System.out.println("Insertamos un nuevo objeto elementoModelo: (true)"+elementoModeloDAO.crear("Mc0331","C1001"));
+      System.out.println("Insertamos un nuevo objeto elementoModelo: (false)"+elementoModeloDAO.crear("VFals","fake"));
+      //System.out.println("Insertamos un nuevo objeto elementoModelo: (true)"+elementoModeloDAO.crear("Sc0331","SL008"));
+       System.out.println("Obtenemos id de un objeto elementoModelo a partir de  CodElemento y CodModelo: (50)"+elementoModeloDAO.getId("Sc0331","SL008"));
+       System.out.println("Obtenemos el id de un elementoModelo: (20)"+elementoModeloDAO.getId("Mc0331","C1001"));
+        System.out.println("Obtener lista de elementos por codigo modelo: "+elementoModeloDAO.getElementosByCodigoModelo("C1001"));
 
     }
 }

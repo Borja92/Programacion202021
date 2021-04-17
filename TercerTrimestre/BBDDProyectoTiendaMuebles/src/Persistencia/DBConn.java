@@ -8,7 +8,7 @@ public class DBConn {
     private Connection conn;
     private String DB_NAME = "mobant";
     //private String HOST = "jdbc:mysql://192.168.21.81:3306/";
-    private String HOST = "jdbc:mysql://192.168.1.99:3306/";
+    private String HOST = "jdbc:mysql://192.168.21.96:3306/";
     private String DB_USER = "usuario";
     //private String DB_USER = "secretario";
     //private String DB_PASS = "Perro20";
