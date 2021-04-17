@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="up">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/11387836-c018-4441-b629-f8acaaaa4646.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/11387836-c018-4441-b629-f8acaaaa4646.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BBDDProyectoTiendaMuebles/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/CategoriaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/DBConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/ElementoModeloDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/SeccionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Persistencia/TipoElementoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -111,6 +92,7 @@
       <workItem from="1618680143392" duration="3054000" />
       <workItem from="1618684444708" duration="2529000" />
       <workItem from="1618687121481" duration="69000" />
+      <workItem from="1618687222584" duration="294000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1618486798230</created>
