@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="up" />
+    <list default="true" id="1ff5e7ff-115f-4483-aafa-cd35b9ad26d0" name="Default Changelist" comment="up">
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/PrimerEjemploSwingEnTiempoEjecucion.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/out/production/PrimerEjemploSwingEnTiempoEjecucion/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/src/VistaPrincipal.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/src/VistaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +105,9 @@
       <workItem from="1618684444708" duration="2529000" />
       <workItem from="1618687121481" duration="69000" />
       <workItem from="1618687222584" duration="294000" />
+      <workItem from="1618902907890" duration="188000" />
+      <workItem from="1618903141976" duration="671000" />
+      <workItem from="1618904083796" duration="1105000" />
     </task>
     <task id="LOCAL-00001" summary="up">
       <created>1618486798230</created>
