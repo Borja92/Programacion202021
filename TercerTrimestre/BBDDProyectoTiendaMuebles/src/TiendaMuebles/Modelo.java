@@ -18,8 +18,6 @@ public class Modelo {
         this.categoria = categoria;
     }
 
-    public Modelo() {
-    }
 
     public List<Elemento> getElementos() {
         return elementos;
@@ -52,6 +50,18 @@ public class Modelo {
     public void setCategoria(String categoria) {
         this.categoria = categoria;
     }
+
+    public  void refresh(){}
+
+    public boolean crearModelo(Modelo modelo){
+        return false;
+    }
+
+    public Elemento crearElemento(String codigo, String tipoElemento, String codigoModelo){
+      Elemento elemento=  new Elemento(codigo,tipoElemento);
+        return elemento;
+    }
+
 
     @Override
     public String toString() {

@@ -12,14 +12,14 @@ public class DBConn {
     /**
      * Elementos y variables de la clase
      */
-    private Connection conn;
-    private String DB_NAME = "mobant";
+    private static Connection conn;
+    private static String DB_NAME = "mobant";
     //private String HOST = "jdbc:mysql://192.168.21.81:3306/";
-    private String HOST = "jdbc:mysql://192.168.1.109:3306/";
-    private String DB_USER = "usuario";
+    private static String HOST = "jdbc:mysql://192.168.1.109:3306/";
+    private static String DB_USER = "usuario";
     //private String DB_USER = "secretario";
     //private String DB_PASS = "Perro20";
-    private String DB_PASS = "123456789";
+    private static String DB_PASS = "123456789";
 
     /**
      * Constructor vacío
@@ -51,8 +51,12 @@ public class DBConn {
      * @return conn
      * @throws SQLException
      */
-    public Connection conectar() throws SQLException {
-        conn = DriverManager.getConnection(HOST + DB_NAME, DB_USER, DB_PASS);
+    public static Connection conectar() {
+        try {
+            conn = DriverManager.getConnection(HOST + DB_NAME, DB_USER, DB_PASS);
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
         return conn;
     }
 
@@ -61,8 +65,13 @@ public class DBConn {
      *
      * @throws SQLException
      */
-    public void desconectar() throws SQLException {
-        if (null != conn)
-            conn.close();
+    public static void desconectar()  {
+        if (null != conn) {
+            try {
+                conn.close();
+            } catch (SQLException throwables) {
+                throwables.printStackTrace();
+            }
+        }
     }
 }

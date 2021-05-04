@@ -9,8 +9,7 @@ public Elemento(String codigo, String tipo){
 
 }
 
-    public Elemento() {
-    }
+
 
     public String getTipo() {
         return tipo;

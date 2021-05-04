@@ -39,17 +39,22 @@ public class CategoriaDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean crear(String categoria) throws SQLException {
-        conn = dbConn.conectar();
+    public boolean crear(String categoria)  {
+        try {
+            conn = dbConn.conectar();
 
-        //PreparedStatement statement = conn.prepareStatement("INSERT INTO categoria(nombre) VALUES ('" + categoria + "')", Statement.RETURN_GENERATED_KEYS);
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO categoria(nombre) VALUES ('" + categoria + "')");
-        int numFilas = statement.executeUpdate();
-        //ResultSet result = statement.getGeneratedKeys();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+            //PreparedStatement statement = conn.prepareStatement("INSERT INTO categoria(nombre) VALUES ('" + categoria + "')", Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO categoria(nombre) VALUES ('" + categoria + "')");
+            int numFilas = statement.executeUpdate();
+            //ResultSet result = statement.getGeneratedKeys();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        }
+  return false;
     }
 
     /**
@@ -60,15 +65,20 @@ public class CategoriaDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean actualizar(String categoria, String nuevoNombre) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE categoria SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + categoria + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+    public boolean actualizar(String categoria, String nuevoNombre)  {
+        try {
+            conn = dbConn.conectar();
 
+            PreparedStatement statement = conn.prepareStatement("UPDATE categoria SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + categoria + "'");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+return false;
     }
 
     /**
@@ -77,26 +87,19 @@ public class CategoriaDAO {
      * @return Lis<String> or null
      */
     public List<String> getAll() {
-        List<String> categoriaDAOS = null;
+        List<String> categoriaDAOS = new ArrayList<>();
         try {
             conn = dbConn.conectar();
-
-
             PreparedStatement statement = conn.prepareStatement("SELECT id, nombre  FROM categoria");
-
-
             ResultSet resultSet = statement.executeQuery();
-            if (resultSet.next()) {
-                categoriaDAOS = new ArrayList<>();
-            }
-            while (resultSet.next()) {
-                int id = resultSet.getInt(1);
-                String nombre = resultSet.getString(2);
-                categoriaDAOS.add(id + " " + nombre);
-            }
 
+            while (resultSet.next()) {
+               // int id = resultSet.getInt(1);
+                String nombre = resultSet.getString(2);
+                categoriaDAOS.add(nombre);
+            }
         } catch (SQLException sqle) {
-            categoriaDAOS = null;
+            return null;
         }
         return categoriaDAOS;
 
@@ -169,18 +172,20 @@ public class CategoriaDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean exists(String categoria) throws SQLException {
-        conn = dbConn.conectar();
-
-        PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM categoria");
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            if (resultSet.getString(1).equalsIgnoreCase(categoria)) {
-                return true;
+    public boolean exists(String categoria)  {
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM categoria");
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                if (resultSet.getString(1).equalsIgnoreCase(categoria)) {
+                    return true;
+                }
             }
-
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
-        dbConn.desconectar();
         return false;
     }
 
@@ -191,13 +196,18 @@ public class CategoriaDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean borrar(String categoria) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM categoria WHERE nombre=" + "'" + categoria + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+    public boolean borrar(String categoria)  {
+        try {
+            conn = dbConn.conectar();
+
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM categoria WHERE nombre=" + "'" + categoria + "'");
+            int valor = statement.executeUpdate();
+            if (valor > 0) {
+                return true;
+            }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+return false;
         }
         return false;
     }

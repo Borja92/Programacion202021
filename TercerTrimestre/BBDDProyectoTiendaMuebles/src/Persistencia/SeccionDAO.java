@@ -41,17 +41,22 @@ public class SeccionDAO {
      * @return boolean or int
      * @throws SQLException
      */
-    public boolean crear(String seccion) throws SQLException {
-        conn = dbConn.conectar();
+    public boolean crear(String seccion)  {
+        try {
+            conn = dbConn.conectar();
 
-        //PreparedStatement statement = conn.prepareStatement("INSERT INTO categoria(nombre) VALUES ('" + categoria + "')", Statement.RETURN_GENERATED_KEYS);
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO seccion(nombre) VALUES ('" + seccion + "')");
-        int numFilas = statement.executeUpdate();
-        //ResultSet result = statement.getGeneratedKeys();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+            //PreparedStatement statement = conn.prepareStatement("INSERT INTO categoria(nombre) VALUES ('" + categoria + "')", Statement.RETURN_GENERATED_KEYS);
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO seccion(nombre) VALUES ('" + seccion + "')");
+            int numFilas = statement.executeUpdate();
+            //ResultSet result = statement.getGeneratedKeys();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        }
+ return false;
     }
 
     /**
@@ -60,18 +65,20 @@ public class SeccionDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean exists(String nombre) throws SQLException {
-       conn= dbConn.conectar();
-
-        PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM seccion");
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            if (resultSet.getString(1).equalsIgnoreCase(nombre)) {
-                return true;
+    public boolean exists(String nombre)  {
+        try {
+            conn= dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM seccion");
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                if (resultSet.getString(1).equalsIgnoreCase(nombre)) {
+                    return true;
+                }
             }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+return false;        }
 
-        }
-        dbConn.desconectar();
         return false;
     }
 
@@ -82,16 +89,21 @@ public class SeccionDAO {
      * @return boolean or int
      * @throws SQLException
      */
-    public boolean actualizar(String seccion, String nuevoNombre) throws SQLException {
+    public boolean actualizar(String seccion, String nuevoNombre)  {
 
 
-       conn= dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE seccion SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + seccion + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+        try {
+            conn= dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("UPDATE seccion SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + seccion + "'");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+
+        } catch (SQLException throwables) {
+return false;
+        }  return false;
     }
 
     /**
@@ -100,14 +112,18 @@ public class SeccionDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean borrar(String nombre) throws SQLException {
+    public boolean borrar(String nombre)  {
 
-      conn= dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM seccion WHERE nombre=" + "'" + nombre + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+        try {
+            conn= dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM seccion WHERE nombre=" + "'" + nombre + "'");
+            int valor = statement.executeUpdate();
+            dbConn.desconectar();
+            if (valor > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+return false;
         }
         return false;
 
@@ -148,25 +164,30 @@ public class SeccionDAO {
      * @return String or null
      * @throws SQLException
      */
-    public String getSeccionById(int id) throws SQLException {
+    public String getSeccionById(int id)  {
 
-       conn=dbConn.conectar();
-        String seccion = "";
-        int indice;
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM seccion WHERE id=" + "'" + id + "'");
+        try {
+            conn=dbConn.conectar();
+            String seccion = "";
+            int indice;
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM seccion WHERE id=" + "'" + id + "'");
 
-        ResultSet resultSet = statement.executeQuery();
+            ResultSet resultSet = statement.executeQuery();
 
-        while (resultSet.next()) {
-            indice = resultSet.getInt(1);
+            while (resultSet.next()) {
+                indice = resultSet.getInt(1);
 
-            if (indice == id) {
-                seccion = resultSet.getString(2);
-                return seccion;
+                if (indice == id) {
+                    seccion = resultSet.getString(2);
+                    return seccion;
+                }
             }
+            dbConn.desconectar();
+
+        } catch (SQLException throwables) {
+return null;
         }
-        dbConn.desconectar();
-        return seccion + null;
+        return null;
     }
 
     /**
@@ -182,9 +203,9 @@ public class SeccionDAO {
             ResultSet resultSet = statement.executeQuery();
 
         while (resultSet.next()) {
-                int id = resultSet.getInt(1);
+               // int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
-                seccionDAO.add( id + nombre);
+                seccionDAO.add(nombre);
             }
 
         } catch (SQLException sqle) {

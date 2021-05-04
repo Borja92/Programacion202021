@@ -37,15 +37,21 @@ public class TipoElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean crear(String nombre) throws SQLException {
+    public boolean crear(String nombre) {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO tipo_elemento(nombre) VALUES ('" + nombre + "')");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+        try {
+            conn = dbConn.conectar();
+
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO tipo_elemento(nombre) VALUES ('" + nombre + "')");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        }
+        return false;
 
     }
 
@@ -56,24 +62,29 @@ public class TipoElementoDAO {
      * @return String or null
      * @throws SQLException
      */
-    public String getTipoElementoById(int id) throws SQLException {
+    public String getTipoElementoById(int id) {
 
-        conn = dbConn.conectar();
-        String tipoElemento = "";
-        int indice;
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM tipo_elemento WHERE id=" + "'" + id + "'");
+        try {
+            conn = dbConn.conectar();
 
-        ResultSet resultSet = statement.executeQuery();
+            String tipoElemento = "";
+            int indice;
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM tipo_elemento WHERE id=" + "'" + id + "'");
 
-        while (resultSet.next()) {
-            indice = resultSet.getInt(1);
+            ResultSet resultSet = statement.executeQuery();
 
-            if (indice == id) {
-                tipoElemento = resultSet.getString(2);
-                return tipoElemento;
+            while (resultSet.next()) {
+                indice = resultSet.getInt(1);
+
+                if (indice == id) {
+                    tipoElemento = resultSet.getString(2);
+                    return tipoElemento;
+                }
             }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+            return null;
         }
-        dbConn.desconectar();
         return null;
     }
 
@@ -112,16 +123,22 @@ public class TipoElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean actualizar(String tipoElemento, String nuevoNombre) throws SQLException {
+    public boolean actualizar(String tipoElemento, String nuevoNombre) {
 
+        try {
+            conn = dbConn.conectar();
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE tipo_elemento SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + tipoElemento + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+            PreparedStatement statement = conn.prepareStatement("UPDATE tipo_elemento SET nombre =" + "'" + nuevoNombre + "'" + " where nombre=" + "'" + tipoElemento + "'");
+            int numFilas = statement.executeUpdate();
+            if (numFilas > 0) {
+                return true;
+            }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+            return false;
+
+        }
+        return false;
     }
 
     /**
@@ -131,17 +148,23 @@ public class TipoElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean exists(String tipoElemento) throws SQLException {
-        conn = dbConn.conectar();
+    public boolean exists(String tipoElemento)  {
+        try {
+            conn = dbConn.conectar();
 
-        PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM tipo_elemento");
-        ResultSet resultSet = statement.executeQuery();
-        while (resultSet.next()) {
-            if (resultSet.getString(1).equalsIgnoreCase(tipoElemento)) {
-                return true;
+            PreparedStatement statement = conn.prepareStatement("SELECT nombre FROM tipo_elemento");
+            ResultSet resultSet = statement.executeQuery();
+            while (resultSet.next()) {
+                if (resultSet.getString(1).equalsIgnoreCase(tipoElemento)) {
+                    return true;
+                }
             }
+            dbConn.desconectar();
+
+        } catch (SQLException throwables) {
+            return false;
         }
-        dbConn.desconectar();
+
         return false;
     }
 
@@ -152,14 +175,18 @@ public class TipoElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean borrar(String tipoElemento) throws SQLException {
+    public boolean borrar(String tipoElemento) {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM tipo_elemento WHERE nombre=" + "'" + tipoElemento + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM tipo_elemento WHERE nombre=" + "'" + tipoElemento + "'");
+            int valor = statement.executeUpdate();
+            dbConn.desconectar();
+            if (valor > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
         return false;
 
@@ -181,7 +208,7 @@ public class TipoElementoDAO {
             while (resultSet.next()) {
                 int id = resultSet.getInt(1);
                 String nombre = resultSet.getString(2);
-                tipoElementoDAOList.add(id + " " + nombre);
+                tipoElementoDAOList.add(nombre);
             }
 
         } catch (SQLException sqle) {

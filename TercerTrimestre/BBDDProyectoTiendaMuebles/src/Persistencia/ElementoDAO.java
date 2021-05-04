@@ -38,16 +38,20 @@ public class ElementoDAO {
      * @return boolean or int
      * @throws SQLException
      */
-    public boolean crear(Elemento elemento) throws SQLException {
-        conn = dbConn.conectar();
-        int id_tipo_elemento = getIdTipoElemento(elemento.getTipo());
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO elemento(codigo,id_tipo_elemento) VALUES ('" + elemento.getCodigo() + "','" + id_tipo_elemento + "')");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
-
+    public boolean crear(Elemento elemento) {
+        try {
+            conn = dbConn.conectar();
+            int id_tipo_elemento = getIdTipoElemento(elemento.getTipo());
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO elemento(codigo,id_tipo_elemento) VALUES ('" + elemento.getCodigo() + "','" + id_tipo_elemento + "')");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        }
+        return false;
     }
 
     /**
@@ -68,7 +72,6 @@ public class ElementoDAO {
      * @return String or null
      */
     public Elemento leer(String codigo) {
-        Elemento elemento = new Elemento();
 
         try {
             conn = dbConn.conectar();
@@ -79,15 +82,16 @@ public class ElementoDAO {
                 String codd = resultSet.getString(2);
 
                 if (codigo.equalsIgnoreCase(codd)) {
-                    elemento.setCodigo(resultSet.getString(2));
-                    elemento.setTipo(tipoElementoDAO.getTipoElementoById(resultSet.getInt(3)));
-                } else return null;
+                    Elemento elemento= new Elemento(resultSet.getString(2),
+                    tipoElementoDAO.getTipoElementoById(resultSet.getInt(3)));
+                return elemento;
+                }
             }
             dbConn.desconectar();
         } catch (SQLException throwables) {
             return null;
         }
-        return elemento;
+        return null;
     }
 
     /**
@@ -127,25 +131,26 @@ public class ElementoDAO {
      * @return Elemento or null
      * @throws SQLException
      */
-    public Elemento getElementoById(int id) throws SQLException {
-        conn = dbConn.conectar();
-        Elemento elemento = new Elemento();
-        int indice;
-        PreparedStatement statement = conn.prepareStatement("SELECT * FROM elemento WHERE id=" + "'" + id + "'");
+    public Elemento getElementoById(int id) {
+        try {
+            conn = dbConn.conectar();
 
-        ResultSet resultSet = statement.executeQuery();
+          //  int indice;
+            PreparedStatement statement = conn.prepareStatement("SELECT * FROM elemento WHERE id=" + "'" + id + "'");
 
-        while (resultSet.next()) {
-            indice = resultSet.getInt(1);
-            if (indice == id) {
-                elemento.setCodigo(resultSet.getString(2));
-                elemento.setTipo(resultSet.getString(3));
-            }
+            ResultSet resultSet = statement.executeQuery();
+
+            while (resultSet.next()) {
+                    Elemento elemento= new Elemento(resultSet.getString(2),
+                    tipoElementoDAO.getTipoElementoById(resultSet.getInt(3)));
+                return elemento;
+                }
+
+            dbConn.desconectar();
+
+        } catch (SQLException throwables) {
+            return null;
         }
-        if (elemento != null) {
-            return elemento;
-        }
-        dbConn.desconectar();
         return null;
     }
 
@@ -157,15 +162,20 @@ public class ElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean actualizar(String codigo, String nuevoCodigo) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE elemento SET codigo =" + "'" + nuevoCodigo + "'" + " where codigo=" + "'" + codigo + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+    public boolean actualizar(String codigo, String nuevoCodigo) {
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("UPDATE elemento SET codigo =" + "'" + nuevoCodigo + "'" + " where codigo=" + "'" + codigo + "'");
+            int numFilas = statement.executeUpdate();
+            if (numFilas > 0) {
+                return true;
+            }
+            dbConn.desconectar();
 
+        } catch (SQLException throwables) {
+            return false;
+        }
+        return false;
     }
 
     /**
@@ -175,16 +185,19 @@ public class ElementoDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean borrar(String codigo) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento WHERE codigo=" + "'" + codigo + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+    public boolean borrar(String codigo) {
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento WHERE codigo=" + "'" + codigo + "'");
+            int valor = statement.executeUpdate();
+            if (valor > 0) {
+                return true;
+            }
+            dbConn.desconectar();
+        } catch (SQLException throwables) {
+            return false;
         }
         return false;
-
     }
 
 }

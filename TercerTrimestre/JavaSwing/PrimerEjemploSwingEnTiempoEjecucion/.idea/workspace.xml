@@ -2,17 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0cbbc5e0-5251-46ad-b636-1e068552e6b8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PrimerEjemploSwingEnTiempoEjecucion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/PrimerEjemploSwingEnTiempoEjecucion/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VistaPrincipal.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/VistaPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/Test.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestCategoriaDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestElementoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestElementoModeloDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestJUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestModeloDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestSeccionDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/TestTipoElementoDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ContadorPulsos.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ContadorPulsos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/CategoriaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/DBConn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ElementoModeloDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ModeloDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/ModeloDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/SeccionDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Persistencia/TipoElementoDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/out/production/BBDDProyectoTiendaMuebles/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/CategoriaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/CategoriaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/DBConn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ElementoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ElementoModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ElementoModeloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ModeloDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/ModeloDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/SeccionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/SeccionDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/TipoElementoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Persistencia/TipoElementoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../BBDDProyectoTiendaMuebles/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +72,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ContadorPulsos">
+    <configuration name="ContadorPulsos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ContadorPulsos" />
+      <module name="PrimerEjemploSwingEnTiempoEjecucion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="PrimerEjemploSwingEnTiempoEjecucion" />
@@ -76,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ContadorPulsos" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -89,7 +116,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618903222509</updated>
       <workItem from="1618903224024" duration="829000" />
-      <workItem from="1618904081369" duration="2962000" />
+      <workItem from="1618904081369" duration="4728000" />
     </task>
     <servers />
   </component>

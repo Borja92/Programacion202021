@@ -20,6 +20,7 @@ public class ElementoModeloDAO {
 
     /**
      * Constructor predeterminado
+     *
      */
     public ElementoModeloDAO() {
         dbConn = new DBConn();
@@ -44,15 +45,22 @@ public class ElementoModeloDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean crear(String codigoElemento, String codigoModelo) throws SQLException {
+    public boolean crear(String codigoElemento, String codigoModelo) {
+        /*int idElemento =getIdElemento(codigoElemento);
+        int idModelo=getIdModelo(codigoModelo);*/
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO elemento_modelo( id_elemento, id_modelo) VALUES ('" + getIdElemento(codigoElemento) + "','" + getIdModelo(codigoModelo) + "')");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO elemento_modelo( id_elemento, id_modelo) VALUES ('" + getIdElemento(codigoElemento) + "','" + getIdModelo(codigoModelo) + "')");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+            return false;
+        }
+        return false;
     }
 
     /**
@@ -113,15 +121,23 @@ public class ElementoModeloDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean actualizarModelo(String codigoElemento, String codigoModelo, String codigoNuevoModelo) throws SQLException {
+    public boolean actualizarModelo(String codigoElemento, String codigoModelo, String codigoNuevoModelo) {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE elemento_modelo SET id_modelo =" + "'" + codigoNuevoModelo + "'" + " where id_elemento=" + "'" + codigoElemento + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+        try {
+            conn = dbConn.conectar();
+
+            PreparedStatement statement = conn.prepareStatement("UPDATE elemento_modelo SET id_modelo =" + "'" + getIdModelo(codigoNuevoModelo) + "'" + " where id_elemento=" + "'" + getIdElemento(codigoElemento) + "' AND  id_modelo=" + " '" + getIdModelo(codigoModelo) +  "'");
+           // PreparedStatement statement = conn.prepareStatement("UPDATE elemento_modelo SET id_modelo =" + "'" + "'"+getIdModelo(codigoNuevoModelo)+"'" + "'" + " where id_elemento=" + "'" +"'"+ getIdElemento(codigoElemento)+"'" + "' AND  id_modelo=" + " '" + "'"+getIdModelo(codigoModelo)+"'" +  "'");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+conn.close();
+        } catch (SQLException throwables) {
+            return false;
+        }
+        return false;
 
     }
 
@@ -141,6 +157,7 @@ public class ElementoModeloDAO {
                 listaElementos.add(elementoDAO.getElementoById(resultSet.getInt(1)));
             }
 
+
         } catch (SQLException throwables) {
             return null;
         }
@@ -155,13 +172,18 @@ public class ElementoModeloDAO {
      * @return boolean
      * @throws SQLException
      */
-    public boolean borrar(String codigoElemento, String codigoModelo) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento_modelo WHERE id_elemento=" + "'" + getIdElemento(codigoElemento) + "' AND  id_modelo=" + " '" + getIdModelo(codigoModelo) + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+    public boolean borrar(String codigoElemento, String codigoModelo) {
+        try {
+            conn = dbConn.conectar();
+
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM elemento_modelo WHERE id_elemento=" + "'" + getIdElemento(codigoElemento) + "' AND  id_modelo=" + " '" + getIdModelo(codigoModelo) + "'");
+            int valor = statement.executeUpdate();
+            dbConn.desconectar();
+            if (valor > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
         }
         return false;
     }

@@ -32,16 +32,19 @@ public class ModeloDAO {
                                                                  categoria)
         public List<String> getCodigosModelosBySeccion(String seccion)
     */
-    public boolean crear(Modelo modelo) throws SQLException {
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO modelo(codigo, id_seccion, id_categoria) VALUES ('" + modelo.getCodigo() + "','" + getIdSeccion(modelo.getSeccion()) + "','" + getIdCategoria(modelo.getCategoria()) + "')");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
-
-
+    public boolean crear(Modelo modelo) {
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("INSERT IGNORE  INTO modelo(codigo, id_seccion, id_categoria) VALUES ('" + modelo.getCodigo() + "','" + getIdSeccion(modelo.getSeccion()) + "','" + getIdCategoria(modelo.getCategoria()) + "')");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        }
+        return false;
     }
 
     private int getIdSeccion(String seccion) {
@@ -57,13 +60,13 @@ public class ModeloDAO {
         return seccionDAO.getSeccionById(id);
     }
 
-    private String getCategoriaById(int id) throws SQLException {
+    private String getCategoriaById(int id)  {
 
         return categoriaDAO.getCategoriaById(id);
     }
 
     public Modelo leer(String codigo) {
-        Modelo modelo = new Modelo();
+
         try {
             conn = dbConn.conectar();
 
@@ -73,16 +76,17 @@ public class ModeloDAO {
                 String codd = resultSet.getString(2);
 
                 if (codigo.equalsIgnoreCase(codd)) {
-                    modelo.setCodigo(resultSet.getString(2));
-                    modelo.setSeccion(getSeccionById(resultSet.getInt(3)));
-                    modelo.setCategoria(getCategoriaById(resultSet.getInt(4)));
-                } else return null;
+                   Modelo modelo = new Modelo(resultSet.getString(2),
+                    getSeccionById(resultSet.getInt(3)),
+                    getCategoriaById(resultSet.getInt(4)));
+                return modelo;
+                }
             }
             dbConn.desconectar();
         } catch (SQLException throwables) {
             return null;
         }
-        return modelo;
+        return null;
     }
 
     public int getId(String codigo) {
@@ -102,31 +106,40 @@ public class ModeloDAO {
             dbConn.desconectar();
 
         } catch (SQLException sqle) {
-            System.out.println(indice);
+            return -1;
         }
         return indice;
 
     }
 
-    public boolean actualizar(String codigo, String nuevoCodigo) throws SQLException {
+    public boolean actualizar(String codigo, String nuevoCodigo)  {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("UPDATE modelo SET codigo =" + "'" + nuevoCodigo + "'" + " where codigo=" + "'" + codigo + "'");
-        int numFilas = statement.executeUpdate();
-        dbConn.desconectar();
-        if (numFilas > 0) {
-            return true;
-        } else return false;
+        try {
+            conn = dbConn.conectar();
+            PreparedStatement statement = conn.prepareStatement("UPDATE modelo SET codigo =" + "'" + nuevoCodigo + "'" + " where codigo=" + "'" + codigo + "'");
+            int numFilas = statement.executeUpdate();
+            dbConn.desconectar();
+            if (numFilas > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
+        } return false;
     }
 
-    public boolean borrar(String codigo) throws SQLException {
+    public boolean borrar(String codigo)  {
 
-        conn = dbConn.conectar();
-        PreparedStatement statement = conn.prepareStatement("DELETE FROM modelo WHERE codigo=" + "'" + codigo + "'");
-        int valor = statement.executeUpdate();
-        dbConn.desconectar();
-        if (valor > 0) {
-            return true;
+        try {
+            conn = dbConn.conectar();
+
+            PreparedStatement statement = conn.prepareStatement("DELETE FROM modelo WHERE codigo=" + "'" + codigo + "'");
+            int valor = statement.executeUpdate();
+            dbConn.desconectar();
+            if (valor > 0) {
+                return true;
+            }
+        } catch (SQLException throwables) {
+            return false;
         }
         return false;
     }
@@ -150,7 +163,7 @@ public class ModeloDAO {
         return listaCodigosModelo;
     }
 
-    public List<String> getCodigosModelosByCategoria(String categoria)  {
+    public List<String> getCodigosModelosByCategoria(String categoria) {
         List<String> listaCodigosModelo = new ArrayList<>();
 
         try {
