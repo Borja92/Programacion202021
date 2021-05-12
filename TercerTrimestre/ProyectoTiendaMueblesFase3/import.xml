@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<catalogo>
+    <modelo codigo="MI001">
+        <seccion>Cocina</seccion>
+        <categoria>Deluxe</categoria>
+        <elementos>
+            <elem tipo="Silla">
+                <codigo>SLL12</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>160</alto>
+                    <ancho>60</ancho>
+                    <fondo>60</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Mesa">
+                <codigo>MLZ12</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>140</alto>
+                    <ancho>90</ancho>
+                    <fondo>100</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MBL12</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>120</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MBL16</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>200</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MAH19</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>60</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MAH47</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>60</alto>
+                    <ancho>90</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+        </elementos>
+    </modelo>
+    <modelo codigo="MI002">
+        <seccion>Cocina</seccion>
+        <categoria>Deluxe</categoria>
+        <elementos>
+            <elem tipo="Silla">
+                <codigo>SLR12</codigo>
+                <color>Rojo</color>
+                <dimensiones>
+                    <alto>160</alto>
+                    <ancho>60</ancho>
+                    <fondo>60</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Mesa">
+                <codigo>MLMR12</codigo>
+                <color>Rojo</color>
+                <dimensiones>
+                    <alto>140</alto>
+                    <ancho>90</ancho>
+                    <fondo>100</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MRL12</codigo>
+                <color>Rojo</color>
+                <dimensiones>
+                    <alto>120</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MBL16</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>200</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MAR19</codigo>
+                <color>Rojo</color>
+                <dimensiones>
+                    <alto>60</alto>
+                    <ancho>60</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Modulo">
+                <codigo>MAR47</codigo>
+                <color>Rojo</color>
+                <dimensiones>
+                    <alto>60</alto>
+                    <ancho>90</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+        </elementos>
+    </modelo>
+    <modelo codigo="MSB11">
+        <seccion>Salón</seccion>
+        <categoria>Basic</categoria>
+        <elementos>
+            <elem tipo="Silla">
+                <codigo>SS092</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>160</alto>
+                    <ancho>60</ancho>
+                    <fondo>60</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Mesa">
+                <codigo>MSS12</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>140</alto>
+                    <ancho>90</ancho>
+                    <fondo>100</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="TVunit">
+                <codigo>TVM03</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>60</alto>
+                    <ancho>150</ancho>
+                    <fondo>40</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Sofá">
+                <codigo>SF06A</codigo>
+                <color>Gris</color>
+                <dimensiones>
+                    <alto>100</alto>
+                    <ancho>1800</ancho>
+                    <fondo>80</fondo>
+                </dimensiones>
+            </elem>
+            <elem tipo="Estanteria">
+                <codigo>ESC902</codigo>
+                <color>Blanco</color>
+                <dimensiones>
+                    <alto>20</alto>
+                    <ancho>120</ancho>
+                    <fondo>20</fondo>
+                </dimensiones>
+            </elem>
+        </elementos>
+    </modelo>
+</catalogo>
