@@ -1,3 +1,5 @@
+package pruebas;
+
 import persistencia.DBConn;
 
 import java.sql.Connection;

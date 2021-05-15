@@ -24,7 +24,7 @@ class CategoriaTest {
     @BeforeAll
     public static void start()
     {
-        TestInit.loadTestDATA();
+        test.TestInit.loadTestDATA();
     }
 
     @Test

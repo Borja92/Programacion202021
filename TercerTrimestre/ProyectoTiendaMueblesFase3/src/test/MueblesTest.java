@@ -24,7 +24,7 @@ class MueblesTest {
     @BeforeAll
     public static void start()
     {
-        TestInit.loadTestDATA();
+        test.TestInit.loadTestDATA();
     }
 
 

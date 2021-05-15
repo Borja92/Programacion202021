@@ -1,3 +1,5 @@
+package pruebas;
+
 import negocio.Muebles;
 
 public class TestMuebles {

@@ -1,3 +1,5 @@
+package pruebas;
+
 import modelo.Elemento;
 import negocio.Muebles;
 import persistencia.ElementoModeloDAO;

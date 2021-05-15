@@ -1,3 +1,5 @@
+package pruebas;
+
 import negocio.Seccion;
 
 import java.util.List;

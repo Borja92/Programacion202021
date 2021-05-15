@@ -1,3 +1,5 @@
+package pruebas;
+
 import com.sun.jdi.connect.Connector;
 import modelo.Elemento;
 import negocio.Categoria;

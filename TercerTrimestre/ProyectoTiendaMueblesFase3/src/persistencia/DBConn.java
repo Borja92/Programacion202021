@@ -6,9 +6,12 @@ import java.sql.SQLException;
 
 public class DBConn {
     private final static String DB_NAME = "mobant";
-    private final static String USER = "root";
-    private final static String PASSWORD = "root1234ROOT";
-    private final static String URL = "jdbc:mysql://localhost:3306/" + DB_NAME + "?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false";
+    private final static String USER = "usuario";
+    //private final static String USER = "root";
+    //private final static String PASSWORD = "root1234ROOT";
+    private final static String PASSWORD = "123456789";
+    private final static String URL = "jdbc:mysql://192.168.1.22:3306/" + DB_NAME + "?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false";
+    //private final static String URL = "jdbc:mysql://localhost:3306/" + DB_NAME + "?sessionVariables=sql_mode='NO_ENGINE_SUBSTITUTION'&jdbcCompliantTruncation=false";
     private static Connection conn = null;
 
     public  Connection conectar() {

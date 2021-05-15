@@ -6,12 +6,6 @@ import org.junit.jupiter.api.*;
 import java.util.Arrays;
 import java.util.List;
 
-
-import org.junit.jupiter.api.MethodOrderer;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestMethodOrder;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)
@@ -24,7 +18,7 @@ public class TipoElementosTest {
     @BeforeAll
     static void init() {
         listaEsperada = Arrays.asList("TIPO1","TIPO2","TIPO3");
-        TestInit.truncateTable("tipo_elemento");
+        test.TestInit.truncateTable("tipo_elemento");
         tipoElementos = new TipoElementos();
         for (String tipo:listaEsperada) {
             tipoElementos.crearTipoElemento(tipo);
