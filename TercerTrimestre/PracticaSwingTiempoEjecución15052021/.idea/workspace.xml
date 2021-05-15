@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c04b533e-0ac0-47bd-ae82-8976ab5ef09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Swing1TiempoEjecucion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/introducción a Swing.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppSwing1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppSwing2FormMiVentana.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AppSwing3Numeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MiVentanta.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MiVentanta.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Numeros.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Numeros.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/.idea/libraries/mysql_mysql_connector_java_8_0_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/controlador/AppMobant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/negocio/FillToXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/persistencia/BBDDToXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/persistencia/GestorXML.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavaSwing/PrimerEjemploSwingEnTiempoEjecucion/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/ProyectoTiendaMueblesFase3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/ProyectoTiendaMueblesFase3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/persistencia/DBConn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/persistencia/DBConn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerCategoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerCategoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerModelo.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerModelo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerMuebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerMuebles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerSeccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerSeccion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerTipoElementos.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestControllerTipoElementos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestMuebles.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/pruebas/TestMuebles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/CategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/CategoriaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/ModeloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/ModeloTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/MueblesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/MueblesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/TipoElementosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProyectoTiendaMueblesFase3/src/test/TipoElementosTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c04b533e-0ac0-47bd-ae82-8976ab5ef09f" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621099206880</updated>
-      <workItem from="1621099208388" duration="8012000" />
+      <workItem from="1621099208388" duration="8337000" />
     </task>
     <servers />
   </component>
