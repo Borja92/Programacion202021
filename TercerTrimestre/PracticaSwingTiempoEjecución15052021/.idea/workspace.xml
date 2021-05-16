@@ -1,7 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c04b533e-0ac0-47bd-ae82-8976ab5ef09f" name="Default Changelist" comment="" />
+    <list default="true" id="c04b533e-0ac0-47bd-ae82-8976ab5ef09f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/DataTransfer_y_MenuBar.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTable.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/Swing1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/asalariado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/comisionado.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/horas.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/AbstractLayout.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/DimensionInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/GridConstraints.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/GridLayoutManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/HorizontalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/LayoutState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/Spacer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/Util.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/com/intellij/uiDesigner/core/VerticalInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/logica/Persona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/logica/Personas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/LayoutListaPersona.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/ListaRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/ModeloListaPersonas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/ModeloTablaPersonas.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/Ventana$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/Ventana$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/out/production/Swing1/vista/Ventana.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/logica/Persona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/logica/Personas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/LayoutListaPersona.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/LayoutListaPersona.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/ListaRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/ModeloListaPersonas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/ModeloTablaPersonas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/Ventana.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/JTableEmpleados/src/vista/Ventana.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/Swing1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavaSwing/TabbedPane_y_CardLayout.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Componentes de Swing.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing4JtextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing5JComboBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing6JTextArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing7Jlist.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing8JTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/AppSwing9JDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Dialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventosJtextField.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventosJtextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JComboBox.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JComboBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JList.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JTable.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JTextArea.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JTextArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,23 +97,37 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
-  <component name="RunManager" selected="Application.AppSwing3Numeros">
-    <configuration name="AppSwing1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppSwing1" />
+  <component name="RunManager" selected="Application.AppSwing9JDialog">
+    <configuration name="AppSwing5JComboBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppSwing5JComboBox" />
       <module name="Swing1TiempoEjecucion" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppSwing2FormMiVentana" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppSwing2FormMiVentana" />
+    <configuration name="AppSwing6JTextArea" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppSwing6JTextArea" />
       <module name="Swing1TiempoEjecucion" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppSwing3Numeros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppSwing3Numeros" />
+    <configuration name="AppSwing7Jlist" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppSwing7Jlist" />
+      <module name="Swing1TiempoEjecucion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppSwing8JTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppSwing8JTable" />
+      <module name="Swing1TiempoEjecucion" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppSwing9JDialog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AppSwing9JDialog" />
       <module name="Swing1TiempoEjecucion" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -69,9 +146,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppSwing3Numeros" />
-        <item itemvalue="Application.AppSwing2FormMiVentana" />
-        <item itemvalue="Application.AppSwing1" />
+        <item itemvalue="Application.AppSwing9JDialog" />
+        <item itemvalue="Application.AppSwing8JTable" />
+        <item itemvalue="Application.AppSwing7Jlist" />
+        <item itemvalue="Application.AppSwing6JTextArea" />
+        <item itemvalue="Application.AppSwing5JComboBox" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1621099206880</updated>
-      <workItem from="1621099208388" duration="8337000" />
+      <workItem from="1621099208388" duration="20641000" />
     </task>
     <servers />
   </component>
