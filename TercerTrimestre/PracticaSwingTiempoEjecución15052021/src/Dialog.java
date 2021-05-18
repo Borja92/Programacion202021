@@ -9,8 +9,11 @@ public class Dialog extends JDialog {
     private JDialog dialog;
 
     public Dialog() {
+      //  contentPane= new JPanel();
         setContentPane(contentPane);
         setModal(true);
+       // buttonOK= new JButton();
+        //buttonCancel= new JButton();
         getRootPane().setDefaultButton(buttonOK);
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -38,6 +41,7 @@ public class Dialog extends JDialog {
                                            }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0),
                 JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
 // Añadidos manualmente
+       // dialog= new JDialog();
         dialog.pack();
         dialog.setVisible(true);
     }
