@@ -2,56 +2,92 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c04b533e-0ac0-47bd-ae82-8976ab5ef09f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/Catalogo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/ClaseCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/Coche.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/ConstructorDeRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererCSV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererConPie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererHtml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererHtmlNavegable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererSinPie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/RendererXML.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/Catalogo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/ClaseCliente.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/Coche.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/ConstructorDeRenderer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererCSV.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererConPie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererHtml.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererHtmlNavegable.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererSinPie.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/RendererXML.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/HTMLCSV/src-clase/out/production/src-clase/src-clase.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid0/solid0.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/solid1.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/src/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/src/Catalogo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/src/ClaseCliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/src/Coche.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid1/src/RendererHtml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/solid2.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid3/solid3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/solid4 (no modificado).zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/solid4.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/solid5.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/solid_reordenado.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/renderer6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid0/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid0/src/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid0/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid0/src/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/RendererHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid2/src/RendererHtmlNavegable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/RendererCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/RendererHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/RendererHtmlNavegable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/RendererSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid4/src/RendererXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/FabricaDeVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/RendererCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/RendererHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/RendererHtmlNavegable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/RendererSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/RendererXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/Vista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/VistaConPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/Solid5/src/VistaSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Modelo/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Negocio/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Negocio/CatalogoSinIncrementoPrecio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/FabricaDeVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/RendererCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/RendererHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/RendererHtmlNavegable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/RendererSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Render/RendererXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/Vista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/VistaConPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/Vista/VistaSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/ClaseCliente.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Modelo/Coche.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Negocio/Catalogo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Negocio/CatalogoSinIncrementoPrecio.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/SolidReordenado.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/FabricaDeVista.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/Renderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/RendererCSV.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/RendererHtml.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/RendererHtmlNavegable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/RendererSinPie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Render/RendererXML.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/Vista.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/VistaConPie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/SolidReordenado/src/out/production/SolidReordenado/Vista/VistaSinPie.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/Catalogo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/CatalogoSinIncrementoPrecio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/ClaseCliente.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/Coche.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/FabricaDeVista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/Renderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/RendererCSV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/RendererHtml.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/RendererHtmlNavegable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/RendererSinPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/RendererXML.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/Vista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/VistaConPie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOLID/renderer6/src/VistaSinPie.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Swing1TiempoEjecucion/Dialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dialog.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +177,8 @@
       <option name="presentableId" value="Default" />
       <updated>1621099206880</updated>
       <workItem from="1621099208388" duration="21769000" />
-      <workItem from="1621299222720" duration="644000" />
+      <workItem from="1621299222720" duration="936000" />
+      <workItem from="1621300251648" duration="585000" />
     </task>
     <servers />
   </component>
