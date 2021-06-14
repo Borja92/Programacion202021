@@ -1,0 +1,5 @@
+En mi opinión incumple LSP porque la clase padre (interfaz) Vehículo, no puede ser intercambiada con sus hijas,
+ya que la clase Avion, no puede implementar algunos métodos como navegar, y pasa lo mismo con las otras clases hijas.
+La solución sería, crear clases padres o interfaces, que implementen todos sus métodos en las clases hijas, de tal forma
+que cumplamos LSP, ya que este principio, nos dice que una clase hija, puede sustituir a su clase padre, ya que
+implementa, cómo mínimo, todas las funcionalidades de la clase padre.

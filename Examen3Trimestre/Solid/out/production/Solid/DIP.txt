@@ -1,0 +1,11 @@
+En el archivo PreguntasSolid.zip tienes un paquete llamado DIP. En su interior hay cuatro clases un
+una interfaz. En la clase Granja se incumple DIP.
+a) Modifica el código para que sí lo cumpla.
+b) Añade un archivo llamado explicación.txt al paquete DIP, donde expliques brevemente por
+qué se incumple DIP.
+NOTA: En la clase Granja.java está delimitada la zona donde se debe aplicar DIP.
+
+[RESPUESTA]
+En mi opinión, no cumple con DIP puesto que debería de usar clases específicas para la vista o interfaz(menú), en vez de
+crear el swicht en la clase Main. La solución sería crear una clase propia destinada a la gestión de la vista. Así, si
+necesitamos ampliar la vista, únicamente deberemos trabajar en una clase.

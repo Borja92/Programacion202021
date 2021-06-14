@@ -1,0 +1,16 @@
+1. OCP
+En el archivo PreguntasSolid.zip tienes un paquete llamado OCP. En su interior hay tres clases.
+a) Modifica el código para que se cumpla OCP
+b) Añade un archivo llamado explicación.txt al paquete OCP, donde expliques brevemente por
+qué se incumple OCP.
+NOTA: En la clase Calculo.java está delimitada la zona donde se debe aplicar OCP.
+
+
+[RESPUESTA]
+
+
+En mi opinión no se cumple el principio Open Close, porque el código original no está cerrado a cambios para su
+extensión. Y es que si queremos ampliar funcionalidades, como añadir "división" tendríamos que cambiar el "core".
+La solución pasa, por crear una interfaz, que nos valga para implementar cuántas clases queramos crear teniendo la
+misma funcionalidad, sólo que diferente lógica. La funcionalidad es "devolver un valor", la lógica, es la que varía
+dependiendo de si queremos multiplicar, sumar o restar.
